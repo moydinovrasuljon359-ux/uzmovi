@@ -8,19 +8,144 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-
 <body>
     <div class="w-[1897px] h-[108px] bg-[#222933]">
-        <img class="ml-[280px] absolute top-[10px]" src="https://uzmovi.net/images/logo.gif" alt="">
+
+        <img class=" w-[290px] h-[80px] absolute top-[10px] left-[4px] md:left-[280px] h-[10px]"
+            src="https://uzmovi.net/images/logo.gif" alt="">
+        <button
+            class=" absolute right-[1px] top-[30px] w-[100px] h-[50px] bg-[#4a315f] border border-purple-500 text-white px-[4px] py-[2px] ">
+            MENYU
+        </button>
         <div class="flex items-center justify-center p-[40px] text-[17px] text-[#a5bbdc] ml-[350px] ">
             <h1 class="hover:bg-blue-600 ">Bosh sahifa</h1>
-            <h1 class="ml-[20px] hover:bg-blue-100">Kinolar</h1>
+            <a class="ml-[20px] hover:bg-red-600" href="#" onclick="showDiv() ">Kinolar</a>
+
+            <div id="box" class="hidden mt-[200px] absolute left-[237px]  p-[4px] bg-[#232f3d] w-[1170px] h-[91px]">
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">Tarjima
+                    kino</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">primyera</button>
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">hind
+                    kinolar</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">mutfilm</button>
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">kino
+                    yangi</button>
+            </div>
+            <script>
+                function showDiv() {
+                    document.getElementById("box").classList.toggle("hidden");
+                }
+            </script>
+            <style>
+                .hidden {
+                    display: none;
+                }
+            </style>
+
             <h1 class="ml-[20px] hover:bg-red-600">Seriallar</h1>
-            <h1 class="ml-[20px] hover:bg-blue-400">Janr </h1>
-            <h1 class="ml-[20px] hover:bg-orange-600">Yil </h1>
-            <h1 class="ml-[20px] hover:bg-green-600">Mamlakat </h1>
+            <a class="ml-[20px] hover:bg-red-600" href="#" onclick="showDivv() ">jang</a>
+
+            <div id="boxx" class="hidden mt-[300px] absolute left-[237px]  p-[4px] bg-[#232f3d] w-[1170px] h-[180px]">
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">
+                    jangi</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">drama</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">komediya</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">meledrama</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">sarguzasht</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">qorqinchilik</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">tarixiy</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">klasika</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">fantasika</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">hayoti</button>
+            </div>
+            <script>
+                function showDivv() {
+                    document.getElementById("boxx").classList.toggle("hidden");
+                }
+            </script>
+            <style>
+                .hidden {
+                    display: none;
+                }
+            </style>
+            <a class="ml-[20px] hover:bg-red-600" href="#" onclick="showDivvv() ">yil</a>
+
+            <div id="boxxv" class="hidden mt-[300px] absolute left-[237px]  p-[4px] bg-[#232f3d] w-[1170px] h-[241px]">
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">555
+                    555</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">555</button>
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">
+                    110000</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">444</button>
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">10000
+                    44</button>
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">1000
+                    666</button>
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">444
+                    777</button>
+                <button class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">77
+                    888</button>
+            </div>
+            <script>
+                function showDivvv() {
+                    document.getElementById("boxxv").classList.toggle("hidden");
+                }
+            </script>
+            <style>
+                .hidden {
+                    display: none;
+                }
+            </style>
+            <a class="ml-[20px] hover:bg-red-600" href="#" onclick="showDivvva() ">mamalakat</a>
+
+            <div id="boxxva" class="hidden mt-[300px] absolute left-[237px]  p-[4px] bg-[#232f3d] w-[1170px] h-[241px]">
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">rosiya</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px] w-[215px] h-[40px]">shatladiya</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">indiya</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">maskiva</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">andijon</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">turkiya</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">sss</button>
+                <button
+                    class="border-2 border-gray-600 rounded-[10px] mt-[20px] ml-[10px]  w-[215px] h-[40px]">ss</button>
+            </div>
+            <script>
+                function showDivvva() {
+                    document.getElementById("boxxva").classList.toggle("hidden");
+                }
+            </script>
+            <style>
+                .hidden {
+                    display: none;
+                }
+            </style>
             <h1 class="ml-[20px] hover:bg-yellow-600">kino yangiliklar </h1>
         </div>
+
+
+
+
+        
         <div class="bg-[#0f172a] h-[90px] overflow-x-auto ">
             <div class="flex gap-[8px] px-[10px] pt-[8px]  ml-[290px] ">
 
@@ -160,54 +285,113 @@
 
         </div>
     </div>
+    <h1 class="ml-[285px] text-[30px] mt-[230px] text-black">Premyeralar</h1>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 1190px;
+            height: 605px;
+            margin-top: 30px;
+            margin-left: 280px;
+            border-radius: 50px;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    </head>
+
+    <body>
+        <swiper-container class="mySwiper" navigation="true">
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide>
+            <swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide>
+            <swiper-slide>Slide 9</swiper-slide>
+        </swiper-container>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
 
 
 
+        <footer class="bg-[#1e293b] py-[30px] mt-[900px]">
 
-    <footer class="bg-[#1e293b] py-[30px] mt-[900px]">
+            <div class="flex justify-center items-center gap-[20px]">
 
-    <div class="flex justify-center items-center gap-[20px]">
+                <img src="https://uzmovi.net/images/logo.gif" alt="Lo" class="h-[80px] ml-[-350px] w-[277px]">
 
-        <img  src="https://uzmovi.net/images/logo.gif" alt="Lo" class="h-[80px] ml-[-350px] w-[277px]">
+                <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded ml-[90px]">
+                    Reklama
+                </a>
 
-        <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded ml-[90px]">
-            Reklama
-        </a>
+                <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
+                    DMCA
+                </a>
 
-        <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
-            DMCA
-        </a>
+                <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
+                    Sayt qoidalari
+                </a>
 
-        <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
-            Sayt qoidalari
-        </a>
+                <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
+                    Qayta aloqa
+                </a>
 
-        <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
-            Qayta aloqa
-        </a>
+                <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
+                    Yosh toifasi
+                </a>
 
-        <a href="#" class="text-gray-300 border border-gray-600 px-[12px] py-[6px] rounded">
-            Yosh toifasi
-        </a>
+                <div
+                    class="w-[30px] h-[30px] border border-white rounded-full text-white flex items-center justify-center">
+                    16+
+                </div>
 
-        <div class="w-[30px] h-[30px] border border-white rounded-full text-white flex items-center justify-center">
-            16+
+            </div>
+
+        </footer>
+        <div class="w-[1897px] h-[81px] bg-[#131a20] text-white">
+            <div class="mt-[0px] text-center text-gray-400 text-[14px]">
+                © UZMOVI.com — 2019 - 2026
+            </div>
+
+            <div class="text-center text-gray-500 text-[13px] mt-[5px]">
+                Права на фильмы принадлежат их авторам. Все фильмы представлены только для ознакомления. <br>
+
+                Администрация не несет ответственности за размещенные пользователями нелегальные материалы! Любой фильм
+                будет удален по требованию правообладателя
+            </div>
         </div>
 
-    </div>
 
-</footer>
-<div class="w-[1897px] h-[81px] bg-[#131a20] text-white">
-     <div class="mt-[0px] text-center text-gray-400 text-[14px]">
-        © UZMOVI.com — 2019 - 2026
-    </div>
-
-    <div class="text-center text-gray-500 text-[13px] mt-[5px]">
-       Права на фильмы принадлежат их авторам. Все фильмы представлены только для ознакомления. <br>
-
-Администрация не несет ответственности за размещенные пользователями нелегальные материалы! Любой фильм будет удален по требованию правообладателя
-    </div>
-</div>
-</body>
+    </body>
 
 </html>
