@@ -13,3 +13,8 @@ def index(request):
 
 def category(request, category_name):
     return render(request, 'category.html')
+
+def serial(request):
+    return render(request,"serial.html")
+def kinoyangilik(request):
+    return render(request,"kinoyangilik.html")

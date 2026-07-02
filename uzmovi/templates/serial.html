@@ -12,12 +12,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-[#131A20]">
+<body>
     <div class="w-full h-[108px] bg-[#222933] relative">
         <img src="https://uzmovi.net/images/logo.gif" class="absolute left-[100px]  top-[20px] w-[170px] " alt="">
         <div
             class="hidden lg:flex h-full items-center justify-center gap-2 text-[#a5bbdc] text-[14px] absolute left-[620px]">
-            <a href=""
+            <a href="/index/"
                 class="w-[117px] h-[101px] border-b-[2px] border-orange-500  hover:bg-orange-500 px-[8px] py-[4px] flex items-center justify-center ">
                 Bosh sahifa
             </a>
@@ -76,7 +76,7 @@
 
             </div>
 
-            <a href="/serial/"
+            <a href="/serial/" 
                 class="w-[117px] h-[101px] flex items-center justify-center border-b-2 border-cyan-500 hover:bg-cyan-500 px-[8px] py-[4px] ">
                 Seriallar
             </a>
@@ -215,7 +215,7 @@
                     Kino yangiliklar
                 </button>
             </div>
-            <a href="http://127.0.0.1:8000/kinoyangilik/#"
+            <a href="https://kinochi.net/"
                 class=" w-[117px] h-[101px] flex items-center justify-center  border-b-2 border-orange-500 hover:bg-orange-500 px-[8px] py-[4px]">
                 Kino yangiliklari
             </a>
@@ -276,7 +276,9 @@
         html,
         body {
 
-            height: 100%;
+            
+            background-color: #131A20;
+
         }
 
         body {
@@ -286,6 +288,7 @@
             color: #fff;
             margin: 0;
             padding: 0;
+            background-color: #131A20;
 
         }
 
@@ -370,9 +373,70 @@
                 class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
     </swiper-container>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .swiper {
+            max-width: 1290px;
+            width: 100%;
+            background: #161D25;
+            padding: 20px 0;
+            margin: 0 auto;
+            margin-top: -15px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: auto !important;
+        }
+
+        .circle-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 4px solid #3a4a5a;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+
+        .circle-avatar:hover {
+            transform: scale(1.15);
+        }
+
+        .circle-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .somsa {
+            width: 100%;
+         
+            height: auto;
+            min-height: 116px;
+            background: #161D25;
+            margin: 0 auto;
+            position: relative;
+            bottom: 510px;
+        }
+
+        .akam {
+         
+            height: 146px;
+            margin: 0 auto;
+            position: relative;
+            bottom: 264px;
+        }
+    </style>
     </head>
-
+ 
     <header class=" akam w-full bg-[#131A20]  mt-[-20px] md:mt-[100px] py-6">
 
         <div class="max-w-[1170px] w-full mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
@@ -477,230 +541,148 @@
         });
     </script>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <style>
-        .swiper {
-            max-width: 1290px;
-            width: 100%;
-            background: #161D25;
-            padding: 20px 0;
-            margin: 0 auto;
-            margin-top: -15px;
-        }
-
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            width: auto !important;
-        }
-
-        .circle-avatar {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            border: 4px solid #3a4a5a;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-
-        .circle-avatar:hover {
-            transform: scale(1.15);
-        }
-
-        .circle-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .somsa {
-            width: 100%;
-
-            height: auto;
-            min-height: 116px;
-            background: #161D25;
-            margin: 0 auto;
-            position: relative;
-            bottom: 510px;
-        }
-
-        .akam {
-
-            height: 146px;
-            margin: 0 auto;
-            position: relative;
-            bottom: 264px;
-        }
-    </style>
-
-    <div class="somsa mt-[-700px] ">
+    <div class="somsa mt-[-700px]">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="och()"
-                            src="https://story.uzmovi.net/2026-06-01/80x80_1780267162_3eae0faf3e22d68ead8d.jpg"
+                        <img src="https://story.uzmovi.net/2026-06-01/80x80_1780267162_3eae0faf3e22d68ead8d.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochi()"
-                            src="https://story.uzmovi.net/2026-06-01/80x80_1780267121_5e259840ffbe48b23585.jpg"
+                        <img src="https://story.uzmovi.net/2026-06-01/80x80_1780267121_5e259840ffbe48b23585.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochin()"
-                            src="https://story.uzmovi.net/2026-06-01/80x80_1780267036_12666fbd1c40394fb45a.jpg"
+                        <img src="https://story.uzmovi.net/2026-06-01/80x80_1780267036_12666fbd1c40394fb45a.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinn()"
-                            src="https://story.uzmovi.net/2026-06-01/80x80_1780266926_b529ec4d499acc8a5e04.jpg"
+                        <img src="https://story.uzmovi.net/2026-06-01/80x80_1780266926_b529ec4d499acc8a5e04.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinny()"
-                            src="https://story.uzmovi.net/2026-05-09/80x80_1778326150_ad263b2682d54a772d73.jpg"
+                        <img src="https://story.uzmovi.net/2026-05-09/80x80_1778326150_ad263b2682d54a772d73.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyy()"
-                            src="https://story.uzmovi.net/2026-02-08/80x80_prev_6988713395b6d1.29696837.jpg" alt="Kino">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="circle-avatar">
-                        <img onclick="ochinnyi()"
-                            src="https://story.uzmovi.net/2025-02-11/80x80_1739287567_8a9f3b7916591af896f7.jpg"
+                        <img src="https://story.uzmovi.net/2026-02-08/80x80_prev_6988713395b6d1.29696837.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyu()"
-                            src="https://story.uzmovi.net/2025-02-13/80x80_1739443767_9bd8223c5c210fac46f0.jpg"
+                        <img src="https://story.uzmovi.net/2025-02-11/80x80_1739287567_8a9f3b7916591af896f7.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuu()"
-                            src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg" alt="Kino">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="circle-avatar">
-                        <img onclick="ochinnyuuu()"
-                            src="https://story.uzmovi.net/2026-02-08/80x80_prev_69886cd7188e74.96443417.jpg" alt="Kino">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="circle-avatar">
-                        <img onclick="ochinnyuuu()"
-                            src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c5d0a0df69.53657849.jpg" alt="Kino">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="circle-avatar">
-                        <img onclick="ochinnyuuuu()"
-                            src="https://story.uzmovi.net/2026-03-23/80x80_prev_69c06e216bed05.18749912.jpg" alt="Kino">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuy()"
-                            src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                        <img src="https://story.uzmovi.net/2025-02-13/80x80_1739443767_9bd8223c5c210fac46f0.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyy()"
-                            src="https://story.uzmovi.net/2026-03-07/80x80_prev_69ab33cd995a17.49036738.jpg" alt="Kino">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyy()"
-                            src="https://story.uzmovi.net/2025-02-13/80x80_1739444326_1b34d6c4299fb903aa5e.jpg"
+                        <img src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg"
                             alt="Kino">
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyyy()"
-                            src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c28be9de54.36170438.jpg" alt="Kino">
+                        <img src="https://story.uzmovi.net/2026-02-08/80x80_prev_69886cd7188e74.96443417.jpg"
+                            alt="Kino">
                     </div>
                 </div>
+
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyyyy()"
-                            src="https://story.uzmovi.net/2026-03-23/80x80_prev_69c06e216bed05.18749912.jpg" alt="Kino">
+                        <img src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c5d0a0df69.53657849.jpg"
+                            alt="Kino">
                     </div>
                 </div>
+
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyyyyu()"
-                            src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c5d0a0df69.53657849.jpg" alt="Kino">
+                        <img src="https://story.uzmovi.net/2026-03-23/80x80_prev_69c06e216bed05.18749912.jpg"
+                            alt="Kino">
                     </div>
                 </div>
+
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyyyyuu()"
-                            src="https://story.uzmovi.net/2025-02-13/80x80_1739443767_9bd8223c5c210fac46f0.jpg"
+                        <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img src="https://story.uzmovi.net/2026-03-07/80x80_prev_69ab33cd995a17.49036738.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img src="https://story.uzmovi.net/2025-02-13/80x80_1739444326_1b34d6c4299fb903aa5e.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c28be9de54.36170438.jpg"
                             alt="Kino">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyyyyuuu()"
-                            src="https://story.uzmovi.net/2026-02-08/80x80_prev_69886cd7188e74.96443417.jpg" alt="Kino">
+                        <img src="https://story.uzmovi.net/2026-03-23/80x80_prev_69c06e216bed05.18749912.jpg"
+                            alt="Kino">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyyyyuuuu()" src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg"
+                        <img src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c5d0a0df69.53657849.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img src="https://story.uzmovi.net/2025-02-13/80x80_1739443767_9bd8223c5c210fac46f0.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img src="https://story.uzmovi.net/2026-02-08/80x80_prev_69886cd7188e74.96443417.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg"
                             alt="Kino">
                     </div>
                 </div>
@@ -708,527 +690,9 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 18,
-            grabCursor: true,
-            freeMode: true,
-        });
-    </script>
-    <a href="#"
-        class="fixed bottom-[10px] right-[10px] w-[60px] h-[60px] bg-[#24A1DE] rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(36,161,222,0.6)] z-[9999] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_25px_rgba(36,161,222,0.9)]">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[30px] h-[30px]" fill="white">
-            <path
-                d="M1.102 11.458c-.147-.06-.21-.226-.145-.367.032-.07.093-.125.17-.15L22.186.223c.14-.06.304-.006.38.122.036.06.044.132.022.198l-3.856 21.28c-.027.153-.165.26-.32.247-.056-.005-.11-.027-.152-.064l-6.26-5.46-3.415 3.29c-.11.105-.283.107-.394.004-.047-.043-.073-.105-.073-.17v-4.148l11.4-10.37-14.1 8.273-4.326-1.5z" />
-        </svg>
-    </a>
-    </a>
 
-
-    <div>
-        <div id="modal" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yop()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qiling</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">hiyonat oyinlari</h1>
-                </div>
-            </div>
-
-        </div>
-
-        
-
-        <div id="modal2" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopi()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-26 091245.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">regin 2</h1>
-                </div>
-            </div>
-
-        </div>
-    
-
-        <div id="modal3" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopin()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src=" /static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">qorquv</h1>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div id="modal4" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinn()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-26 091245.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">momiyo</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="modal5" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinny()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="modal6" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-26 091245.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="modal7" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyi()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="modal8" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-26 091245.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">sumerking</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal9" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">tanishing jo blek</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal10" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-26 091245.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">liva sergevish</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal11" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">arvoh</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal12" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-26 091245.mp4 " autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">olovidin</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal13" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal14" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal15" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal16" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal17" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal18" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal19" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyuuu()"
-                        class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-            <div id="modal20" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyuuuu()"
-                        class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <video class="pt-[50px]" src="/static/img/Запись экрана 2026-06-25 141757.mp4" autoplay
-                        controls></video>
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <script>
-            function och() {
-                document.getElementById("modal").classList.remove("hidden");
-            }
-
-            function yop() {
-                document.getElementById("modal").classList.add("hidden");
-            }
-            function ochi() {
-                document.getElementById("modal2").classList.remove("hidden");
-            }
-
-            function yopi() {
-                document.getElementById("modal2").classList.add("hidden");
-            }
-            function ochin() {
-                document.getElementById("modal3").classList.remove("hidden");
-            }
-
-            function yopin() {
-                document.getElementById("modal3").classList.add("hidden");
-            }
-            function ochinn() {
-                document.getElementById("modal4").classList.remove("hidden");
-            }
-
-            function yopinn() {
-                document.getElementById("modal4").classList.add("hidden");
-            }
-            function ochinny() {
-                document.getElementById("modal5").classList.remove("hidden");
-            }
-
-            function yopinny() {
-                document.getElementById("modal5").classList.add("hidden");
-            }
-
-
-            function ochinnyy() {
-                document.getElementById("modal6").classList.remove("hidden");
-            }
-
-            function yopinnyy() {
-                document.getElementById("modal6").classList.add("hidden");
-            }
-            function ochinnyi() {
-                document.getElementById("modal7").classList.remove("hidden");
-            }
-
-            function yopinnyi() {
-                document.getElementById("modal7").classList.add("hidden");
-            }
-            function ochinnyu() {
-                document.getElementById("modal8").classList.remove("hidden");
-            }
-
-            function yopinnyu() {
-                document.getElementById("modal8").classList.add("hidden");
-            }
-            function ochinnyuu() {
-                document.getElementById("modal9").classList.remove("hidden");
-            }
-
-            function yopinnyuu() {
-                document.getElementById("modal9").classList.add("hidden");
-            }
-            function ochinnyuuu() {
-                document.getElementById("modal10").classList.remove("hidden");
-            }
-
-            function yopinnyuuu() {
-                document.getElementById("modal10").classList.add("hidden");
-            }
-            function ochinnyuuuu() {
-                document.getElementById("modal11").classList.remove("hidden");
-            }
-
-            function yopinnyuuuu() {
-                document.getElementById("modal11").classList.add("hidden");
-            }
-            function ochinnyuuuuy() {
-                document.getElementById("modal12").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuy() {
-                document.getElementById("modal12").classList.add("hidden");
-            }
-            function ochinnyuuuuyy() {
-                document.getElementById("modal13").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyy() {
-                document.getElementById("modal13").classList.add("hidden");
-            }
-            function ochinnyuuuuyyy() {
-                document.getElementById("modal14").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyy() {
-                document.getElementById("modal14").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyy() {
-                document.getElementById("modal15").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyy() {
-                document.getElementById("modal15").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyy() {
-                document.getElementById("modal16").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyy() {
-                document.getElementById("modal16").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyu() {
-                document.getElementById("modal17").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyu() {
-                document.getElementById("modal17").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyuu() {
-                document.getElementById("modal18").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyuu() {
-                document.getElementById("modal18").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyuuu() {
-                document.getElementById("modal19").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyuuu() {
-                document.getElementById("modal19").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyuuuu() {
-                document.getElementById("modal20").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyuuuu() {
-                document.getElementById("modal20").classList.add("hidden");
-            }
-        </script>
-
-    </div>
-    <div class="w-[1170px] mx-[auto]">
-    <div class="flex items-center gap-3 mb-4">
-        <div class="w-[3px] h-6 bg-purple-500"></div>
-        <h2 class="text-[#9aa4b6] text-3xl font-bold uppercase">
-            Premyeralar
-        </h2>
-    </div>
-    <div class="relative overflow-hidden">
-
-        <img id="slide"
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200"
-            class="w-full h-[550px] object-cover">
-        <div class="absolute inset-0 bg-black/30"></div>
-        <button
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-[#18d0b5] flex items-center justify-center hover:scale-105 transition">
-            <svg width="35" height="35" fill="black" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"/>
-            </svg>
-        </button>
-        <div
-            class="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm text-white text-[22px] text-center py-8">
-            Daha 17 Yana 17 Hali 17 turk serial barcha qismlari uzbek o'zbek tilida premyera
-        </div>
-        <button id="prev"
-            class="absolute left-3 top-1/2 -translate-y-1/2 w-12 h-14 border border-white/30 bg-black/20 text-white text-3xl">
-            ‹
-        </button>
-        <button id="next"
-            class="absolute right-3 top-1/2 -translate-y-1/2 w-12 h-14 border border-white/30 bg-black/20 text-white text-3xl">
-            ›
-        </button>
-
-    </div>
-</div>
-
-
-
-
-
-
-<div class="w-[1170px] mx-auto gap-[30px] lg:flex">
+    <div class="w-[1170px] mx-auto gap-[30px] lg:flex bg-[#131A20]">
     <div>
         <div class="max-w-[872px] mx-auto px-3">
 
@@ -1295,7 +759,9 @@
             <div class="w-[10px] h-[5px] bg-[#08465b]"></div>
             <div class="w-[10px] h-[5px] bg-[#fff]"></div>
         </div>
-    </div><div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
 
         <div class="bg-[#222933]">
             <img class="w-full h-[274px] object-cover"
@@ -1392,7 +858,13 @@
 
         <h1 class="border-l-4 pl-[5px] font-bold border-l-red mb-[11px] text-[17px]">
           MULTFILMLAR
-        </h1><img class="w-full h-[180px] sm:h-[220px] md:h-[240px] object-cover"
+        </h1>
+
+ 
+          
+         
+         
+        <img class="w-full h-[180px] sm:h-[220px] md:h-[240px] object-cover"
           src="https://images.uzmovi.net/2026-05-05/db332cc652b8654dc9e4f6995030b131.jpg" alt="">
 
 
@@ -1472,7 +944,12 @@
 
     </div>
 
-  </div></div>
+  </div>
+    
+
+
+   
+</div>
     </div>
      <div class="w-[360px] flex flex-col gap-5">
         
@@ -1509,7 +986,9 @@
                     <div class="dot w-5 h-1 bg-[#3b4859] cursor-pointer rounded-[2px] transition-colors duration-300" onclick="changeMovie(1)"></div>
                     <div class="dot w-5 h-1 bg-[#3b4859] cursor-pointer rounded-[2px] transition-colors duration-300" onclick="changeMovie(2)"></div>
                 </div>
-            </div><div>
+            </div>  
+
+            <div>
                 <h2 class="text-[16px] font-bold uppercase mt-0 mb-[15px] pl-[10px] flex items-center text-[#79a3cf] border-l-4 border-[#a855f7]">
                     Top Donatorlar
                 </h2>
@@ -1539,7 +1018,9 @@
                 <a href="#" class="w-full bg-[#5b7534] text-white border-none p-[10px] text-[13px] font-bold uppercase rounded-[4px] cursor-pointer flex justify-center items-center gap-[5px] no-underline transition-colors duration-200 hover:bg-[#69873c] box-border">
                     Donat Qilish <i class="fas fa-chevron-right text-[10px]"></i>
                 </a>
-            </div><div class="rounded-[4px] overflow-hidden w-full">
+            </div>
+
+            <div class="rounded-[4px] overflow-hidden w-full">
                 <div class="bg-[#7c3aed] text-white p-[12px] text-[14px] font-bold uppercase flex justify-between items-center cursor-pointer" onclick="toggleAccordion('ratingContent', 'ratingIcon')">
                     <span>Yuqori reytingda</span>
                     <i id="ratingIcon" class="fas fa-minus-circle"></i>
@@ -1585,7 +1066,9 @@
 <a href="#" class="text-center text-[#79a3cf] no-underline text-xs uppercase py-2 border-t border-[#252f3f] mt-[5px] block hover:text-white">
                         Brachasini ko'rish
                     </a>
-                </div><div class="bg-[#252f3f] border-t border-[#1e2633] text-[13px] mt-[5px] text-white p-[12px] font-bold uppercase flex justify-between items-center cursor-pointer">
+                </div>
+
+                <div class="bg-[#252f3f] border-t border-[#1e2633] text-[13px] mt-[5px] text-white p-[12px] font-bold uppercase flex justify-between items-center cursor-pointer">
                     <span>Ko'p muhokama qilingan</span>
                     <i class="fas fa-plus-circle"></i>
                 </div>
@@ -1619,77 +1102,30 @@
     </div>
     
 </div>
-<script>
-const slides = [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
-    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=1200",
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
-];
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-let current = 0;
-const img = document.getElementById("slide");
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 18,
+            grabCursor: true,
+            freeMode: true,
+        });
+    </script>
+  <a href="#" class="fixed bottom-[10px] right-[10px] w-[60px] h-[60px] bg-[#24A1DE] rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(36,161,222,0.6)] z-[9999] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_25px_rgba(36,161,222,0.9)]">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[30px] h-[30px]" fill="white">
+    <path d="M1.102 11.458c-.147-.06-.21-.226-.145-.367.032-.07.093-.125.17-.15L22.186.223c.14-.06.304-.006.38.122.036.06.044.132.022.198l-3.856 21.28c-.027.153-.165.26-.32.247-.056-.005-.11-.027-.152-.064l-6.26-5.46-3.415 3.29c-.11.105-.283.107-.394.004-.047-.043-.073-.105-.073-.17v-4.148l11.4-10.37-14.1 8.273-4.326-1.5z"/>
+  </svg>
+</a>
+</a>
 
-document.getElementById("next").onclick = () => {
-    current = (current + 1) % slides.length;
-    img.src = slides[current];
-};
 
-document.getElementById("prev").onclick = () => {
-    current = (current - 1 + slides.length) % slides.length;
-    img.src = slides[current];
-};
-</script>
-  <footer>
-    <div class="footer-orabturuvchi mt-[50px]">
 
-      <div class="tepa bg-[#222933] w-[100%] min-h-[100px] py-6 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 gap-6">
-        <div class="rasm flex justify-center">
-          <img src="https://uzmovi.net/images/logo.gif" alt="Logo" class="max-w-[277px] w-full h-auto">
-        </div>
-        
-      
-        <div class="reklama flex flex-wrap justify-center gap-2 px-2 md:px-11">
-          <ul class="flex flex-wrap justify-center gap-2">
-            <li>
-              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Reklama</a>
-            </li>
-            <li>
-              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">DMCA</a>
-            </li>
-            <li>
-              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Sayt qoidalari</a>
-            </li>
-            <li>
-              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Qayta aloqa</a>
-            </li>
-            <li>
-              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Yosh toifasi</a>
-            </li>
-          </ul>
-        </div>
 
-        <div class="16+">
-          <ul class="flex items-center justify-center gap-3">
-            <li class="h-[31px]">
-              <img src="https://uzmovi.net/images/16_plus.png" alt="" class="h-full object-contain">
-            </li>
-            <li class="h-[31px]">
-              <img src="https://uzmovi.net/images/hit.gif" alt="" class="h-full object-contain">
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      
-      <div class="past bg-[#131a20] py-[20px] px-4 text-center text-xs md:text-sm leading-relaxed">
-        <div class="max-w-4xl mx-auto space-y-1">
-          <p class="text-[#6E879F]">© <strong> UZMOVi.com</strong> — 2019 - 2026</p>
-          <p class="text-[#6E879F]">Права на фильмы принадлежат их авторам. Все фильмы представлены только для ознакомления.</p>
-          <p class="text-[#6E879F]">Администрация не несет ответственности за размещенные пользователями нелегальные материалы! Любой фильм <a href="https://uzmovi.net/rightholder_eng.html" class="underline hover:text-[#a5bbdc]">будет удален</a> по требованию правообладателя</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+
+
+
+
 </body>
-
 </html>
