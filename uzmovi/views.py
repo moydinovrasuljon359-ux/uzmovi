@@ -28,3 +28,6 @@ def sms(request):
 
 def qoida(request):
     return render(request,"qoida.html")
+
+def royhat(request):
+    return render(request,"royhat.html")

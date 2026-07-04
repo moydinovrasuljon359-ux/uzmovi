@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
-<body class="bg-[#131A20]">
-    <div class="w-full h-[108px] bg-[#222933] relative">
+<body>
+        <div class="w-full h-[108px] bg-[#222933] relative">
         <img src="https://uzmovi.net/images/logo.gif" class="absolute left-[100px]  top-[20px] w-[170px] " alt="">
         <div
             class="hidden lg:flex h-full items-center justify-center gap-2 text-[#a5bbdc] text-[14px] absolute left-[620px]">
@@ -221,12 +219,15 @@
             </a>
 
         </div>
+
+
         <button onclick="toggleMenu()"
             class="lg:hidden absolute right-[3px] top-[20px] bg-[#4a315f] border border-purple-500 text-white w-[90px] h-[40px] rounded">
             MENYU ☰
         </button>
 
     </div>
+
     <div id="mobileMenu" class="hidden lg:hidden bg-[#222933] text-[#a5bbdc] ">
         <div class="block p-[4px] border-b border-orange-500 ">BOSH SAHIFA</div>
         <a class="block p-[4px] border-b border-green-500">KINOLAR</a>
@@ -275,6 +276,7 @@
 
             height: 100%;
         }
+
         body {
 
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -282,7 +284,7 @@
             color: #fff;
             margin: 0;
             padding: 0;
-             overflow-x: hidden;
+            overflow-x: hidden;
         }
 
         swiper-container {
@@ -381,7 +383,7 @@
                 </div>
                 <div
                     class="h-[40px] px-4 border-2 flex items-center justify-center rounded border-[#313842] text-[13px] text-[#6E879F] cursor-pointer hover:bg-[#304156] transition">
-              <a id="register-btn" href="http://127.0.0.1:8000/royhat/#">Ro'yxatdan o'tish</a>
+                    <a id="register-btn" href="http://127.0.0.1:8000/royhat/#">Ro'yxatdan o'tish</a>
                 </div>
             </div>
 
@@ -553,7 +555,7 @@
         }
     </style>
 
-    <div class="somsa mt-[-700px] overflow-x-auto ">
+    <div class="somsa mt-[-700px] ">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
 
@@ -722,662 +724,57 @@
             freeMode: true,
         });
     </script>
-    <a href="#"
-        class="fixed bottom-[10px] right-[10px] w-[60px] h-[60px] bg-[#24A1DE] rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(36,161,222,0.6)] z-[9999] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_25px_rgba(36,161,222,0.9)]">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[30px] h-[30px]" fill="white">
-            <path
-                d="M1.102 11.458c-.147-.06-.21-.226-.145-.367.032-.07.093-.125.17-.15L22.186.223c.14-.06.304-.006.38.122.036.06.044.132.022.198l-3.856 21.28c-.027.153-.165.26-.32.247-.056-.005-.11-.027-.152-.064l-6.26-5.46-3.415 3.29c-.11.105-.283.107-.394.004-.047-.043-.073-.105-.073-.17v-4.148l11.4-10.37-14.1 8.273-4.326-1.5z" />
-        </svg>
-    </a>
-    </a>
 
+    <div class="w-full bg-[#161d25] h-full md:h-[500px] mt-[-200px] md:mt-[-370px]">
+    <div class="w-full max-w-[1190px] mx-auto px-4 md:p-[100px]">
 
- <div>
-        <div id="modal" class="hidden fixed inset-0 flex justify-center z-50">
+        <h2 class="text-[#a5bbdc] text-center font-md text-[24px] mb-[20px]">
+            Ro‘yxatdan o‘tish
+        </h2>
 
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yop()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                   <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qiling</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">hiyonat oyinlari</h1>
-                </div>
-            </div>
-
+        <div class="w-full max-w-[400px] h-[40px] bg-[#28313e] rounded-[5px] flex items-center mx-auto">
+            <span class="w-[39px] h-[40px] bg-[#333d4d] text-center p-2 text-[#6e879f]">
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input class="w-full h-[40px] bg-[#28313e] ml-[20px] text-sm" type="text" placeholder="Email manzil">
         </div>
 
-        
-
-        <div id="modal2" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopi()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">regin 2</h1>
-                </div>
-            </div>
-
-        </div>
-    
-
-        <div id="modal3" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopin()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">qorquv</h1>
-                </div>
-            </div>
-
+        <div class="w-full max-w-[400px] h-[40px] bg-[#28313e] rounded-[5px] flex items-center mx-auto mt-[10px]">
+            <span class="w-[39px] h-[40px] bg-[#333d4d] text-center p-2 text-[#6e879f]">
+                <i class="fa-solid fa-user"></i>
+            </span>
+            <input class="w-full h-[40px] bg-[#28313e] ml-[20px] text-sm" type="text" placeholder="Login">
         </div>
 
-
-        <div id="modal4" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinn()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">momiyo</h1>
-                </div>
-            </div>
-
+        <div class="w-full max-w-[400px] h-[40px] bg-[#28313e] rounded-[5px] flex items-center mx-auto mt-[10px]">
+            <span class="w-[39px] h-[40px] bg-[#333d4d] text-center p-2 text-[#6e879f]">
+                <i class="fa-solid fa-broom"></i>
+            </span>
+            <input class="w-full h-[40px] bg-[#28313e] ml-[20px] text-sm" type="text" placeholder="Parol">
         </div>
 
-        <div id="modal5" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinny()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
-                </div>
-            </div>
-
+        <div class="w-full max-w-[400px] h-[40px] bg-[#28313e] rounded-[5px] flex items-center mx-auto mt-[10px]">
+            <span class="w-[39px] h-[40px] bg-[#333d4d] text-center p-2 text-[#6e879f]">
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input class="w-full h-[40px] bg-[#28313e] ml-[20px] text-sm" type="text" placeholder="Parolni tasdiqlash">
         </div>
 
-        <div id="modal6" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
-                </div>
-            </div>
-
+        <div class="w-full max-w-[300px] mx-auto mt-[10px] flex items-center">
+            <input class="w-[20px] mt-[5px]" type="checkbox">
+            <a class="text-sm p-1 text-[#6e879f]" href="">
+                foydalanuvchi shartlariga roziman
+            </a>
         </div>
 
-        <div id="modal7" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyi()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
-                </div>
-            </div>
-
+        <div class="w-full max-w-[380px] mx-auto bg-[#638b34] h-[34px] text-center p-1 mt-[10px] text-[#fff]">
+            Davom etish
         </div>
-
-        <div id="modal8" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">sumerking</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal9" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">tanishing jo blek</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal10" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                  <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">liva sergevish</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal11" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">arvoh</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal12" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal14" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                   <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal15" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal16" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                   <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal17" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal18" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <div id="modal19" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyuuu()"
-                        class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-            <div id="modal20" class="hidden fixed inset-0 flex justify-center z-50">
-
-            <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
-                <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
-                    <button onclick="yopinnyuuuuyyyyyuuuu()"
-                        class="absolute top-2 right-3 text-3xl font-bold text-white">
-                        ×
-                    </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
-                    <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
-                    <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
-                </div>
-            </div>
-
-        </div>
-        <script>
-            function och() {
-                document.getElementById("modal").classList.remove("hidden");
-            }
-
-            function yop() {
-                document.getElementById("modal").classList.add("hidden");
-            }
-            function ochi() {
-                document.getElementById("modal2").classList.remove("hidden");
-            }
-
-            function yopi() {
-                document.getElementById("modal2").classList.add("hidden");
-            }
-            function ochin() {
-                document.getElementById("modal3").classList.remove("hidden");
-            }
-
-            function yopin() {
-                document.getElementById("modal3").classList.add("hidden");
-            }
-            function ochinn() {
-                document.getElementById("modal4").classList.remove("hidden");
-            }
-
-            function yopinn() {
-                document.getElementById("modal4").classList.add("hidden");
-            }
-            function ochinny() {
-                document.getElementById("modal5").classList.remove("hidden");
-            }
-
-            function yopinny() {
-                document.getElementById("modal5").classList.add("hidden");
-            }
-
-
-            function ochinnyy() {
-                document.getElementById("modal6").classList.remove("hidden");
-            }
-
-            function yopinnyy() {
-                document.getElementById("modal6").classList.add("hidden");
-            }
-            function ochinnyi() {
-                document.getElementById("modal7").classList.remove("hidden");
-            }
-
-            function yopinnyi() {
-                document.getElementById("modal7").classList.add("hidden");
-            }
-            function ochinnyu() {
-                document.getElementById("modal8").classList.remove("hidden");
-            }
-
-            function yopinnyu() {
-                document.getElementById("modal8").classList.add("hidden");
-            }
-            function ochinnyuu() {
-                document.getElementById("modal9").classList.remove("hidden");
-            }
-
-            function yopinnyuu() {
-                document.getElementById("modal9").classList.add("hidden");
-            }
-            function ochinnyuuu() {
-                document.getElementById("modal10").classList.remove("hidden");
-            }
-
-            function yopinnyuuu() {
-                document.getElementById("modal10").classList.add("hidden");
-            }
-            function ochinnyuuuu() {
-                document.getElementById("modal11").classList.remove("hidden");
-            }
-
-            function yopinnyuuuu() {
-                document.getElementById("modal11").classList.add("hidden");
-            }
-            function ochinnyuuuuy() {
-                document.getElementById("modal12").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuy() {
-                document.getElementById("modal12").classList.add("hidden");
-            }
-            function ochinnyuuuuyy() {
-                document.getElementById("modal13").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyy() {
-                document.getElementById("modal13").classList.add("hidden");
-            }
-            function ochinnyuuuuyyy() {
-                document.getElementById("modal14").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyy() {
-                document.getElementById("modal14").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyy() {
-                document.getElementById("modal15").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyy() {
-                document.getElementById("modal15").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyy() {
-                document.getElementById("modal16").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyy() {
-                document.getElementById("modal16").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyu() {
-                document.getElementById("modal17").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyu() {
-                document.getElementById("modal17").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyuu() {
-                document.getElementById("modal18").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyuu() {
-                document.getElementById("modal18").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyuuu() {
-                document.getElementById("modal19").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyuuu() {
-                document.getElementById("modal19").classList.add("hidden");
-            }
-            function ochinnyuuuuyyyyyuuuu() {
-                document.getElementById("modal20").classList.remove("hidden");
-            }
-
-            function yopinnyuuuuyyyyyuuuu() {
-                document.getElementById("modal20").classList.add("hidden");
-            }
-        </script>
 
     </div>
-  
-
-
-
-
-
-
-<div class="max-w-[1170px] w-full mx-auto px-4 flex flex-col lg:flex-row gap-8 mt-[-280px]">
- 
-        <main class="flex-1 min-w-0">
- 
-            <div class="flex items-center justify-between mb-6">
-                <div class="border-l-4 border-[#08465b]">
-                    <h1 class="text-[#9CB1D0] font-bold text-[17px] uppercase pl-[10px]">Primyera</h1>
-                </div>
-                <div class="flex gap-[5px]">
-                    <div class="w-[10px] h-[5px] bg-[#08465b]"></div>
-                    <div class="w-[10px] h-[5px] bg-white"></div>
-                </div>
-            </div>
- 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-07-01/2f48603b73dc3f4042bbddb1c155bb5e.jpg" alt="Minionlar va maxluqlar">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Minionlar va maxluqlar premyera uzbek o'zbek tilida</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-07-01/365499b7d1abdfeab298255457f0233a.jpg" alt="Farishta">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Farishta (qozoq filmi, premyera, o'zbek tilida, Uzbek)</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-07-01/071472e56b39ddd44a1de8eca560f1ac.jpg" alt="Quvnoq do'mboqchalar">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Quvnoq do'mboqchalar. Oltin ajdarho haqida afsona</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-07-01/18c2334db05344f8b58bcdf281ca122c.jpg" alt="Isyonkor 2">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Isyonkor 2 (hind kino, o'zbek tilida, Uzbek)</h1>
-                </div>
-            </div>
- 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-07-01/346e875060250d5320b9826eaac2f7d9.jpg" alt="Kelin">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Kelin</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-06-30/91136d7446b07bbd52b0f4ab31e2a5b4.jpg" alt="Chuqur suvlar">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Chuqur suvlar</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-06-30/7078ac61d98db6150593d7d8e6e48a8c.jpg" alt="O'zga sayyoralik itlar">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">O'zga sayyoralik itlar / Samoviy kuchukchalar / Dumli begonalar (multfilm, o'zbek tilida, Uzbek)</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-06-30/5ad8a9d9e379e63bdfac71adf5f74ef2.jpg" alt="Superqahramonlar jamoasi">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Superqahramonlar jamoasi / ligasi / Quvnoq qahramonlar 3 (multfilm, o'zbek tilida, Uzbek)</h1>
-                </div>
-            </div>
- 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-06-29/2fde842472047d6b48c224217595458e.jpg" alt="Muzokaralar o'yini">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Muzokaralar o'yini (premyera, o'zbek tilida, Uzbek)</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-06-29/0023de98411a1f5e00a6b9b78d122d0b.jpg" alt="Marsupilami izidan">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Marsupilami izidan: Dengiz sayohati (2026, premyera, o'zbek tilida, Uzbek)</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-06-29/0ac5b615379e5ca1605f7a5e51bb5f2a.jpg" alt="Londondagi talonchilik">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Londondagi talonchilik (2026, premyera, o'zbek tilida, Uzbek)</h1>
-                </div>
-                <div class="bg-[#222933] rounded overflow-hidden">
-                    <img class="w-full aspect-[2/3] object-cover" src="https://images.uzmovi.net/2026-06-28/08c164aff0518ee67b27f462ae7764f8.jpg" alt="Tovba Tavba">
-                    <h1 class="text-center text-[#9CB1D0] py-3 px-2 text-sm">Tovba Tavba (2026, qozoq filmi, o'zbek tilida, Uzbek)</h1>
-                </div>
-            </div>
-        </main>
- 
-        <aside class="w-full lg:w-[360px] flex-shrink-0 flex flex-col gap-5">
- 
-            <div class="flex w-full h-[55px] rounded overflow-hidden">
-                <a href="#" class="flex-1 flex justify-center items-center text-white text-xl transition-opacity hover:opacity-80 bg-[#2488bd]"><i class="fab fa-telegram-plane"></i></a>
-                <a href="#" class="flex-1 flex justify-center items-center text-white text-xl transition-opacity hover:opacity-80 bg-[#b32252]"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="flex-1 flex justify-center items-center text-white text-xl transition-opacity hover:opacity-80 bg-[#111111]"><i class="fab fa-tiktok"></i></a>
-                <a href="#" class="flex-1 flex justify-center items-center text-white text-xl transition-opacity hover:opacity-80 bg-[#8b2d69]"><i class="fab fa-instagram"></i></a>
-            </div>
- 
-            <div class="bg-[#1e2633] rounded p-4 flex flex-col gap-6">
- 
-                <div>
-                    <h2 class="text-[15px] font-bold uppercase mb-3 pl-[10px] flex items-center text-[#79a3cf] border-l-4 border-[#1a88bd]">
-                        Tasodifiy filmlar
-                    </h2>
-                    <div class="bg-[#151a21] rounded p-3 text-center">
-                        <div class="w-full h-[260px] sm:h-[300px] overflow-hidden rounded mb-3">
-                            <img id="randomMovieImg" src="https://images.uzmovi.net/2026-07-01/2d3862e183566dfe256c38322fc7fd08.jpg" alt="Kino" class="w-full h-full object-cover">
-                        </div>
-                        <p id="randomMovieTitle" class="text-[#79a3cf] text-[13px] leading-[1.4] m-0 min-h-[36px] line-clamp-2">
-                            Maykl Michael uzbek o'zbek tilida premyera kino tarjima...
-                        </p>
-                    </div>
-                    <div class="flex justify-center gap-[6px] mt-3" id="randomMovieDots"></div>
-                </div>
- 
-                <div>
-                    <h2 class="text-[15px] font-bold uppercase mb-3 pl-[10px] flex items-center text-[#79a3cf] border-l-4 border-[#a855f7]">
-                        Top donatorlar
-                    </h2>
-                    <div class="flex flex-col gap-[10px] mb-3">
-                        <div class="flex items-center bg-[#5c6643] rounded p-[10px] text-white">
-                            <img class="w-10 h-10 rounded-full mr-3 object-cover flex-shrink-0" src="https://api.dicebear.com/7.x/bottts/svg?seed=sunnat" alt="avatar">
-                            <div class="flex flex-col gap-[2px] min-w-0">
-                                <span class="text-[14px] font-bold truncate">👑 Sunnat Azizov</span>
-                                <span class="text-[13px] text-white">310 000 so'm</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-[#252f3f] rounded p-[10px] text-white">
-                            <img class="w-10 h-10 rounded-full mr-3 object-cover flex-shrink-0" src="https://api.dicebear.com/7.x/identicon/svg?seed=islom" alt="avatar">
-                            <div class="flex flex-col gap-[2px] min-w-0">
-                                <span class="text-[14px] font-bold truncate">Islomjon Joraboyev</span>
-                                <span class="text-[13px] text-[#94a3b8]">210 000 so'm</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-[#252f3f] rounded p-[10px] text-white">
-                            <img class="w-10 h-10 rounded-full mr-3 object-cover flex-shrink-0" src="https://api.dicebear.com/7.x/initials/svg?seed=abdu" alt="avatar">
-                            <div class="flex flex-col gap-[2px] min-w-0">
-                                <span class="text-[14px] font-bold truncate">абдурашид_с_ SsS</span>
-                                <span class="text-[13px] text-[#94a3b8]">175 000 so'm</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="w-full bg-[#5b7534] text-white p-[10px] text-[13px] font-bold uppercase rounded flex justify-center items-center gap-[5px] no-underline hover:bg-[#69873c] transition">
-                        Donat qilish <i class="fas fa-chevron-right text-[10px]"></i>
-                    </a>
-                </div>
- 
-                <div class="rounded overflow-hidden -mx-4 -mb-4">
-                    <button onclick="toggleAccordion('ratingContent','ratingIcon')"
-                        class="w-full bg-[#7c3aed] text-white p-3 text-[14px] font-bold uppercase flex justify-between items-center">
-                        <span>Yuqori reytingda</span>
-                        <i id="ratingIcon" class="fas fa-minus-circle"></i>
-                    </button>
- 
-                    <div id="ratingContent" class="py-3 px-4 flex flex-col gap-3 bg-[#1e2633]">
-                        <div class="flex gap-3 border-b border-[#252f3f] pb-3">
-                            <img class="w-[65px] h-[90px] object-cover rounded flex-shrink-0" src="https://picsum.photos/100/150?random=11" alt="kino">
-                            <div class="flex flex-col justify-between flex-1 min-w-0">
-                                <a href="#" class="text-[#79a3cf] text-[13px] font-bold uppercase leading-[1.2] hover:text-[#2ba2da]">
-                                    O'rgimchak-Odam: Uyga yo'l yo'q
-                                </a>
-                                <span class="bg-[#151a21] text-[#55657e] text-[11px] px-[6px] py-[2px] rounded self-start">Tarjima kinolar</span>
-                                <div class="flex items-center gap-2">
-                                    <button class="bg-[#151a21] text-[#22c55e] px-2 py-1 rounded text-[11px] flex items-center gap-1"><i class="far fa-thumbs-up"></i></button>
-                                    <span class="text-[#22c55e] font-bold text-xs">+35727</span>
-                                    <button class="bg-[#151a21] text-[#ef4444] px-2 py-1 rounded text-[11px] flex items-center gap-1"><i class="far fa-thumbs-down"></i></button>
-                                </div>
-                            </div>
-                        </div>
- 
-                        <div class="flex gap-3">
-                            <img class="w-[65px] h-[90px] object-cover rounded flex-shrink-0" src="https://picsum.photos/100/150?random=12" alt="kino">
-                            <div class="flex flex-col justify-between flex-1 min-w-0">
-                                <a href="#" class="text-[#79a3cf] text-[13px] font-bold uppercase leading-[1.2] hover:text-[#2ba2da]">
-                                    Venzdey Wednesday Adamslar
-                                </a>
-                                <span class="bg-[#151a21] text-[#55657e] text-[11px] px-[6px] py-[2px] rounded self-start">Tarjima kinolar</span>
-                                <div class="flex items-center gap-2">
-                                    <button class="bg-[#151a21] text-[#22c55e] px-2 py-1 rounded text-[11px] flex items-center gap-1"><i class="far fa-thumbs-up"></i></button>
-                                    <span class="text-[#22c55e] font-bold text-xs">+35681</span>
-                                    <button class="bg-[#151a21] text-[#ef4444] px-2 py-1 rounded text-[11px] flex items-center gap-1"><i class="far fa-thumbs-down"></i></button>
-                                </div>
-                            </div>
-                        </div>
- 
-                        <a href="#" class="text-center text-[#79a3cf] text-xs uppercase py-2 border-t border-[#252f3f] mt-1 hover:text-white">
-                            Barchasini ko'rish
-                        </a>
-                    </div>
- 
-                    <button onclick="toggleAccordion('discussedContent','discussedIcon')"
-                        class="w-full bg-[#252f3f] border-t border-[#1e2633] text-[13px] text-white p-3 font-bold uppercase flex justify-between items-center">
-                        <span>Ko'p muhokama qilingan</span>
-                        <i id="discussedIcon" class="fas fa-plus-circle"></i>
-                    </button>
-                    <div id="discussedContent" class="hidden p-3 bg-[#1e2633] text-[#79a3cf] text-[13px]">Tez orada...</div>
- 
-                    <button onclick="toggleAccordion('viewedContent','viewedIcon')"
-                        class="w-full bg-[#252f3f] border-t border-[#1e2633] text-[13px] text-white p-3 font-bold uppercase flex justify-between items-center">
-                        <span>Ko'p ko'rilgan</span>
-                        <i id="viewedIcon" class="fas fa-plus-circle"></i>
-                    </button>
-                    <div id="viewedContent" class="hidden p-3 bg-[#1e2633] text-[#79a3cf] text-[13px]">Tez orada...</div>
-                </div>
-            </div>
- 
-            <div class="bg-[#1e2633] p-4 rounded">
-                <h3 class="text-white text-sm font-bold uppercase mb-3 tracking-wide">
-                    <i class="fas fa-tags mr-1 text-[#2ba2da]"></i> Teglar buluti
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <a class="tag" href="#">visokeo</a>
-                    <a class="tag" href="#">ozbek</a>
-                    <a class="tag" href="#">kino</a>
-                    <a class="tag" href="#">qismlari</a>
-                    <a class="tag" href="#">To'yi</a>
-                    <a class="tag" href="#">Andressen</a>
-                    <a class="tag" href="#">Sichqon</a>
-                    <a class="tag" href="#">Yo'lbarslar</a>
-                    <a class="tag" href="#">SAindhav</a>
-                    <a class="tag" href="#">andreas</a>
-                    <a class="tag" href="#">uzbek</a>
-                    <a class="tag" href="#">shamollar</a>
-                    <a class="tag" href="#">premyera</a>
-                </div>
-            </div>
-        </aside>
-    </div>
-  <footer>
-    <div class="footer-orabturuvchi mt-[50px]">
+</div>
+      <footer>
+    <div class="footer-orabturuvchi mt-[-10px]">
 
       <div class="tepa bg-[#222933] w-[100%] min-h-[100px] py-6 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 gap-6">
         <div class="rasm flex justify-center">
@@ -1428,5 +825,4 @@
     </div>
   </footer>
 </body>
-
 </html>

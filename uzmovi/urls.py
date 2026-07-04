@@ -11,5 +11,6 @@ urlpatterns = [
     path('film/',  film, name='film'),
     path('sms/', sms, name='sms'),
     path('qoida/', qoida, name='qoida'),
+    path('royhat/', royhat, name='royhat'),
    path("category/<str:category_name>/", category, name="category"),
 ]
