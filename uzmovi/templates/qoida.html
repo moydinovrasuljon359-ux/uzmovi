@@ -1,11 +1,1038 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Правила сайта</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    qoida
+<body class="bg-[#1e2530] text-[#8e9ca8] font-sans min-h-screen  items-center justify-center p-6 w-full">
+
+      <div class="w-full h-[108px] bg-[#222933] relative">
+        <img src="https://uzmovi.net/images/logo.gif" class="absolute left-[100px]  top-[20px] w-[170px] " alt="">
+        <div
+            class="hidden lg:flex h-full items-center justify-center gap-2 text-[#a5bbdc] text-[14px] absolute left-[620px]">
+            <a href="http://127.0.0.1:8000/index/#"
+                class="w-[117px] h-[101px] border-b-[2px] border-orange-500  hover:bg-orange-500 px-[8px] py-[4px] flex items-center justify-center ">
+                Bosh sahifa
+            </a>
+            <div class="relative">
+                <button onclick="toggleKinolar()"
+                    class="w-[117px] h-[101px] flex items-center justify-center border-b-[2px] border-green-500 hover:bg-green-500 px-[8px] py-[4px] text-[#a5bbdc]">
+                    Kinolar <i class="bi bi-caret-down-fill m-[10px]"></i>
+                </button>
+
+                <div id="kinolarMenu"
+                    class="hidden absolute top-[100%] left-[-380px] mt-[8px] bg-[#232f3d] p-[12px] rounded-[6px] z-[50] w-[1170px] h-[91px] flex gap-4 ">
+
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-6 py-3 rounded text-sm font-sans transition-colors duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Tarjima kinolar
+                    </button>
+
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Premyeralar
+                    </button>
+
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Hind kinolari
+                    </button>
+
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Multfilm
+                    </button>
+
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Kino yangiliklar
+                    </button>
+
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Kino yangiliklar
+                    </button>
+
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Kino yangiliklar
+                    </button>
+                    <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Kino yangiliklar
+                    </button> <button
+                        class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
+                        Kino yangiliklar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <a href="/serial/"
+                class="w-[117px] h-[101px] flex items-center justify-center border-b-2 border-cyan-500 hover:bg-cyan-500 px-[8px] py-[4px] ">
+                Seriallar
+            </a>
+
+            <a onclick="toggleKinolari()" href="#"
+                class=" w-[117px] h-[101px] flex items-center justify-center  border-b-2 border-red-500 hover:bg-red-500 px-[8px] py-[4px]">
+                Janr <i class="bi bi-caret-down-fill m-[10px]"></i>
+            </a>
+
+            <div id="kinolarMenuu"
+                class="hidden absolute top-[100%] left-[10px] mt-[8px] bg-[#232f3d] p-[12px] rounded-[6px] z-[50] w-[1170px] h-[91px] flex gap-4">
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Premyeralar
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Hind kinolari
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Multfilm
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button> <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button> <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+
+            </div>
+            <a onclick="toggleKinolarii()" href="#"
+                class=" w-[117px] h-[101px] flex items-center justify-center  border-b-2 border-yellow-500 hover:bg-yellow-500 px-[8px] py-[4px]">
+                Yil <i class="bi bi-caret-down-fill m-[10px]"></i>
+            </a>
+
+            <div id="kinolarMenuuu"
+                class="hidden absolute top-[100%] left-[10px] mt-[8px] bg-[#232f3d] p-[12px] rounded-[6px] z-[50] w-[1170px] h-[91px] flex ml-[10px] gap-4">
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Premyeralar
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Hind kinolari
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Multfilm
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button> <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button> <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+            </div>
+            <a onclick="toggleKinolariii()" href="#"
+                class=" w-[117px] h-[101px] flex items-center justify-center  border-b-2 border-purple-500 hover:bg-purple-500 px-[8px] py-[4px]">
+                Mamlakat <i class="bi bi-caret-down-fill m-[10px]"></i>
+            </a>
+
+            <div id="kinolarMenuuuu"
+                class="hidden absolute top-[100%] left-[-10px] mt-[8px] bg-[#232f3d] p-[12px] rounded-[6px] z-[50] w-[1170px] h-[91px] flex gap-4">
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Premyeralar
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Hind kinolari
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Multfilm
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+                <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button> <button
+                    class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
+                    Kino yangiliklar
+                </button>
+            </div>
+            <a href="http://127.0.0.1:8000/kinoyangilik/#"
+                class=" w-[117px] h-[101px] flex items-center justify-center  border-b-2 border-orange-500 hover:bg-orange-500 px-[8px] py-[4px]">
+                Kino yangiliklari
+            </a>
+
+        </div>
+
+
+        <button onclick="toggleMenu()"
+            class="lg:hidden absolute right-[3px] top-[20px] bg-[#4a315f] border border-purple-500 text-white w-[90px] h-[40px] rounded">
+            MENYU ☰
+        </button>
+
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#222933] text-[#a5bbdc] ">
+        <div class="block p-[4px] border-b border-orange-500 ">BOSH SAHIFA</div>
+        <a class="block p-[4px] border-b border-green-500">KINOLAR</a>
+        <a class="block p-[4px] border-b border-cyan-500">SERIALLAR</a>
+        <a class="block p-[4px] border-b border-red-500">JANR</a>
+        <a class="block p-[4px] border-b border-yellow-500">YIL</a>
+        <a class="block p-[4px] border-b border-purple-500">MAMLAKAT</a>
+        <a class="block p-[4px] border-b border-orange-500">KINO YANGILIKLARI</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        }
+
+        function toggleKinolar() {
+            document.getElementById("kinolarMenu").classList.toggle("hidden");
+
+        }
+        function toggleKinolari() {
+            document.getElementById("kinolarMenuu").classList.toggle("hidden");
+
+        }
+        function toggleKinolari() {
+            document.getElementById("kinolarMenuuu").classList.toggle("hidden");
+
+        }
+        function toggleKinolari() {
+            document.getElementById("kinolarMenuuuu").classList.toggle("hidden");
+
+        }
+        function toggleKinolarii() {
+            document.getElementById("kinolarMenuuuu").classList.toggle("hidden");
+
+        }
+        function toggleKinolariii() {
+            document.getElementById("kinolarMenuuuu").classList.toggle("hidden");
+
+        }
+    </script>
+
+
+    <style>
+        html,
+        body {
+
+            height: 100%;
+        }
+
+        body {
+
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        swiper-container {
+            width: 1170px;
+            height: 80px;
+            margin: 310px;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 180px;
+            object-fit: cover;
+            display: none;
+        }
+    </style>
+    </head>
+
+
+    <swiper-container class="mySwiper  h-[90px] overflow-x-auto md: mt-[-25px] " pagination="true"
+        pagination-clickable="true" slides-per-view="4" space-between="30" centered-slides="true">
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[40px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-90px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-220px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-340px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-450px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-580px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-690px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+        <swiper-slide> <img src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                class="w-[56px] h-[56px] rounded-full border-2 cursor-pointer hover:scale-110  hover:shadow-lg ml-[-790px]"></swiper-slide>
+    </swiper-container>
+
+
+    </head>
+
+    <header class=" akam w-full bg-[#131A20]  mt-[-20px] md:mt-[100px] py-6">
+
+        <div class="max-w-[1170px] w-full mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+
+            <div class="flex items-center gap-2 w-full sm:w-auto justify-center sm:justify-start">
+                <div id="login-btn"
+                    class="h-[40px] px-4 border-2 flex items-center justify-center rounded border-[#313842] text-xs text-[#6E879F] cursor-pointer hover:bg-[#304156] transition">
+                    <i class="fa-solid fa-user mr-2"></i>
+                    <a href="#">Kirish</a>
+                </div>
+                <div
+                    class="h-[40px] px-4 border-2 flex items-center justify-center rounded border-[#313842] text-[13px] text-[#6E879F] cursor-pointer hover:bg-[#304156] transition">
+                    <a id="register-btn" href="#">Ro'yxatdan o'tish</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 relative w-full sm:w-auto justify-center sm:justify-end text-[#6E879F]">
+                <div id="btn"
+                    class="w-[40px] h-[39px] border-2 border-[#313842] rounded flex items-center justify-center hover:bg-[#304156] cursor-pointer transition">
+                    <a href="http://127.0.0.1:8000/film/#">
+                        <i class="fa-solid fa-fire"></i>
+                    </a>
+                </div>
+
+                <div style="display: none;" id="tooltip"
+                    class="w-[130px] text-center h-[30px] absolute z-30 bg-purple-500 rounded bottom-[50px] sm:top-[45px] sm:bottom-auto left-1/2 sm:left-[-45px] transform -translate-x-1/2 sm:translate-x-0 flex items-center justify-center">
+                    <span class="text-xs text-[#fff] font-medium">Eksklyuziv filmlar</span>
+                </div>
+
+                <div
+                    class="w-[40px] h-[39px] border-2 border-[#313842] rounded flex items-center justify-center hover:bg-[#304156] cursor-pointer transition">
+                    <a href="http://127.0.0.1:8000/primyera/#">
+                        <i   class="fa-solid fa-film"></i>
+                    </a>
+                </div>
+                <div
+                    class="w-[40px] h-[39px] border-2 border-[#313842] rounded flex items-center justify-center hover:bg-[#304156] cursor-pointer transition">
+                    <a href="http://127.0.0.1:8000/sms/#">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="w-[40px] h-[39px] border-2 border-[#313842] rounded flex items-center justify-center hover:bg-[#304156] cursor-pointer transition">
+                    <a href="http://127.0.0.1:8000/qoida/#">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-[1170px] w-full mx-auto px-4 mt-6 flex">
+            <input
+                class="bg-[#222933] text-[#99b1d4] flex-1 h-[40px] pl-4 rounded-l outline-none focus:ring-1 focus:ring-[#313842]"
+                type="text" placeholder="Qidirish....">
+            <button class="bg-[#222933] w-[45px] h-[40px] text-[#99b1d4] rounded-r hover:bg-[#2c3542] transition">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="login-modal" style="display: none;"
+        class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+        <div class="bg-[#161d25] p-6 sm:p-8 rounded-lg border border-[#313842] relative w-full max-w-[400px]">
+            <button id="close-modal"
+                class="absolute top-3 right-4 text-[#A5BBDC] hover:text-white text-2xl transition">&times;</button>
+
+            <h2 class="text-xl sm:text-2xl text-center mb-6 text-[#A5BBDC] font-semibold">Tizimga kirish</h2>
+
+            <div class="w-full flex bg-[#28313E] rounded mb-3 items-center px-3">
+                <span class="text-[#A5BBDC]"><i class="fa-solid fa-user"></i></span>
+                <input class="w-full h-[40px] bg-[#28313E] text-white pl-3 outline-none text-sm" type="text"
+                    placeholder="Login yoki email manzil">
+            </div>
+
+            <div class="w-full flex bg-[#28313E] rounded mb-5 items-center px-3">
+                <span class="text-[#A5BBDC]"><i class="fa-solid fa-key"></i></span>
+                <input class="w-full h-[40px] bg-[#28313E] text-white pl-3 outline-none text-sm" type="password"
+                    placeholder="Parol">
+            </div>
+            <div class="w-full">
+                <button
+                    class="w-full h-[40px] text-[#fff] bg-[#638b34] hover:bg-[#4d6d28] rounded font-medium transition text-sm">Kirish</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const tooltip = document.getElementById("tooltip");
+        const tooltipp = document.getElementById("tooltipp");
+        const loginBtn = document.getElementById("login-btn");
+        const loginModal = document.getElementById("login-modal");
+        const closeModal = document.getElementById("close-modal");
+
+        btn.addEventListener("mouseenter", () => tooltip.style.display = "flex");
+        btn.addEventListener("mouseleave", () => tooltip.style.display = "none");
+
+        loginBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            loginModal.style.display = "flex";
+        });
+
+        closeModal.addEventListener("click", () => loginModal.style.display = "none");
+
+        window.addEventListener("click", (e) => {
+            if (e.target === loginModal) {
+                loginModal.style.display = "none";
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .swiper {
+            max-width: 1290px;
+            width: 100%;
+            background: #161D25;
+            padding: 20px 0;
+            margin: 0 auto;
+            margin-top: -15px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: auto !important;
+        }
+
+        .circle-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 4px solid #3a4a5a;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+
+        .circle-avatar:hover {
+            transform: scale(1.15);
+        }
+
+        .circle-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .somsa {
+            width: 100%;
+
+            height: auto;
+            min-height: 116px;
+            background: #161D25;
+            margin: 0 auto;
+            position: relative;
+            bottom: 510px;
+        }
+
+        .akam {
+
+            height: 146px;
+            margin: 0 auto;
+            position: relative;
+            bottom: 264px;
+        }
+    </style>
+
+    <div class="somsa mt-[-700px] ">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="och()"
+                            src="https://story.uzmovi.net/2026-06-01/80x80_1780267162_3eae0faf3e22d68ead8d.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochi()"
+                            src="https://story.uzmovi.net/2026-06-01/80x80_1780267121_5e259840ffbe48b23585.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochin()"
+                            src="https://story.uzmovi.net/2026-06-01/80x80_1780267036_12666fbd1c40394fb45a.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinn()"
+                            src="https://story.uzmovi.net/2026-06-01/80x80_1780266926_b529ec4d499acc8a5e04.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinny()"
+                            src="https://story.uzmovi.net/2026-05-09/80x80_1778326150_ad263b2682d54a772d73.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyy()"
+                            src="https://story.uzmovi.net/2026-02-08/80x80_prev_6988713395b6d1.29696837.jpg" alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyi()"
+                            src="https://story.uzmovi.net/2025-02-11/80x80_1739287567_8a9f3b7916591af896f7.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyu()"
+                            src="https://story.uzmovi.net/2025-02-13/80x80_1739443767_9bd8223c5c210fac46f0.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuu()"
+                            src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg" alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuu()"
+                            src="https://story.uzmovi.net/2026-02-08/80x80_prev_69886cd7188e74.96443417.jpg" alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuu()"
+                            src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c5d0a0df69.53657849.jpg" alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuu()"
+                            src="https://story.uzmovi.net/2026-03-23/80x80_prev_69c06e216bed05.18749912.jpg" alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuy()"
+                            src="https://story.uzmovi.net/2025-03-13/80x80_1741837948_adcfe16fe67c3e396570.jpeg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyy()"
+                            src="https://story.uzmovi.net/2026-03-07/80x80_prev_69ab33cd995a17.49036738.jpg" alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyyy()"
+                            src="https://story.uzmovi.net/2025-02-13/80x80_1739444326_1b34d6c4299fb903aa5e.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyyyy()"
+                            src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c28be9de54.36170438.jpg" alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyyyyy()"
+                            src="https://story.uzmovi.net/2026-03-23/80x80_prev_69c06e216bed05.18749912.jpg" alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyyyyyu()"
+                            src="https://story.uzmovi.net/2026-03-03/80x80_prev_69a6c5d0a0df69.53657849.jpg" alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyyyyyuu()"
+                            src="https://story.uzmovi.net/2025-02-13/80x80_1739443767_9bd8223c5c210fac46f0.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyyyyyuuu()"
+                            src="https://story.uzmovi.net/2026-02-08/80x80_prev_69886cd7188e74.96443417.jpg" alt="Kino">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="circle-avatar">
+                        <img onclick="ochinnyuuuuyyyyyuuuu()" src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg"
+                            alt="Kino">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 18,
+            grabCursor: true,
+            freeMode: true,
+        });
+    </script>
+     <div class="w-[850px] bg-[#1B2838] p-[30px] font-sans mt-[-300px] ml-[300px]">
+    
+    <h2 class="text-[24px] font-semibold text-[#A5BBDC] border-b border-[#2C3E50] pb-[10px] mb-[20px] uppercase ">
+        QOIDA / ПРАВИЛА
+    </h2>
+
+    <p class="text-[15px] text-[#A2AAA3] text-justify  mb-[25px] text-[#A5BBDC]">
+        <span class="text-[#A5BBDC] font-bold">UZ:</span>  Биз сизга катъий ушбу коидаларни укиб чикишни тавсия этамиз, зеро бу сиздан атига беш дакика вактингзини олиб натижада сизнинг ва бизнинг вактимизни тежашга ва шу вактни биз сайтда янгилик яратиш ва сайтни янада кизикарли килишга сарфлаган булардик эдик.Аввало хаммасини барча фойдаланувчиларга ва сайт маъмуриятига хушмуомалаликдан бошлаймиз.Фойдаланувчига куполлик килиш ва уни хакорат килиш ман этилади, Сайтимизда бир бирига дустона муносабатда ва хушмуомала булишни, сузлашув маданиятни тушунганингиз учун олдиндан рахмат.
+    </p>
+
+    <h3 class="text-[#B8312F] font-bold text-[15px] mb-[15px] uppercase">
+        Сайтда такикланади:
+    </h3>
+
+    <div class="text-[#565A5F] text-[14px]  mb-[25px]">
+        <p class="ml-[15px]">1. Мухокама килинаётган масалага доир булмаган хабар ва изохларни колдириш.</p>
+        <p class="ml-[15px]">2. Хеч кандай матнсиз смайликлар колдириш</p>
+        <p class="ml-[15px]">3. Мазмунсиз хабарлар ва изохлар (+1, мда, ппц,хаа, зур ва бошкалар).</p>
+        <p class="ml-[15px]">4. Бошка тилларда хабар ва изох колдириш.</p>
+        <p class="ml-[15px]">5. Caps Lock тугмаси босик холда ёзилган хабар ва изохлар.</p>
+        <p class="ml-[15px]">6. Сайт фойдаланувчиларини хакорат килиш ва уларни тахдид килиш, камситиш.</p>
+        <p class="ml-[15px]">7. Конунларга зид келадиган изохлар, янгилик кушиш.</p>
+        <p class="ml-[15px]">8. Изохларда сукиниш, инсонийлик тамойиларни топташ, миллий адоват келтириб чикариш.</p>
+        <p class="ml-[15px]">9. Аватарлар (фойдаланувчи расми) хакоратли ёки одоб - ахлок коидаларини бузуши.</p>
+        <p class="ml-[15px]">10. Шахсий профилга бошка сайтларни реклама килиш, ёки сукиниб ёзиш.</p>
+        <p class="ml-[15px]">11. Диний марузалар ва хабарлар жунатиш.</p>
+        <p class="ml-[15px]">12. Администраторлар ва Модераторларнинг (журналистларнинг) харакатини оммавий мухокамага ташлаш ва уни мухокама килиш.</p>
+    </div>
+
+    <div class="space-y-[12px] mb-[25px]">
+        <p class="text-[#6E879F] text-[14px] font-bold">
+            - Ушбу бандни бузган фойдаланувчи аккаунти сайтдан учирилади.
+        </p>
+        <p class="text-[#6E879F] text-[14px] italic">
+            (Маъмурият узида изохларни куриб чикиш ва уларнинг холати ва талабга жавоб бериш ёки бермаслигини текшириш ва уларни учириш ёки кисман учиришни уз ваколатида олиб колади.)
+        </p>
+        <p class="text-center text-[#6E879F] text-[14px] underline font-medium">
+            Администратор томонидан чикарилган карор – якуний ва мухокама килинмайди.
+        </p>
+    </div>
+
+    <div class="text-center text-[#6E879F] font-bold text-[15px] pt-[15px] border-t border-[#2C3E50]">
+        Диккат! Агар сиз 30кундан ортик профилингизга кирмасангиз. Профилингиз сайтимиздан автоматик ўчирилади!
+    </div>
+
+</div>
+
+  <div class="max-w-4xl w-full bg-[#1e2530] p-8 rounded-lg shadow-lg leading-relaxed text-base ml-[300px] ">
+    
+    <p class="mb-6">
+      <span class="font-bold text-white">RU:</span> Мы рекомендуем вам прочитать эти правила, они займут у вас всего лишь какие-то пять минут и этим вы сэкономите ваше и наше время так как за эти минуты мы одновременно сможем учесть ваши рекомендации и создать на нашем сайте новости. Прежде всего начнём с уважения к нашим участникам и администрации сайта. Запрещается грубить и грубо относится к участникам. заранее благодарим всех за понимание дружеского отношения и соблюдения правил речевого этикета.
+    </p>
+
+    <h2 class="text-[#ca3a3a] font-bold text-lg mb-4">На сайте запрещается:</h2>
+
+    <ol class="list-decimal pl-5 space-y-1 mb-6">
+      <li>Оставлять комментарии к несоответствующим темам.</li>
+      <li>Оставлять смайлики без текстов.</li>
+      <li>Оставлять непонятные комментарии.</li>
+      <li>Писать на непонятном языке.</li>
+      <li>Писать и оставлять комментарии на CAPS LOCK.</li>
+      <li>Оскорблять унижать участников сайта.</li>
+      <li>Пользоваться нецензурными словами в комментариях, унижать людей, писать политические обсуждения.</li>
+      <li>Добавлять противозаконные комментарии и новости.</li>
+      <li>Отправлять спам, рекламировать товары, предлагать другие ресурсы.</li>
+      <li>Добавлять не соответствующие фото правилам приличия.</li>
+      <li>Рекламировать или писать матом в личном профиле.</li>
+      <li>Отправлять религиозные письма.</li>
+      <li>Обсуждать действия администраторов и модераторов.</li>
+    </ol>
+
+    <div class="space-y-4 mb-6">
+      <p class="text-[#7289da] font-semibold">
+        Аккаунт пользователя удалится в случае не соблюдения одной из правил.
+      </p>
+      <p class="text-sm text-[#7a8795]">
+        (Администрация и модераторы оставляют за собой право редактировать оставленные комментарии либо удалить их с сайта)
+      </p>
+    </div>
+
+    <div class="text-center mb-8">
+      <a href="#" class="text-[#7289da] underline font-medium hover:text-blue-400 transition-colors">
+        Решение администрации не обсуждается.
+      </a>
+    </div>
+
+    <p class="text-[#8e9ca8] font-medium text-sm">
+      <span class="text-white font-bold">Внимание!</span> Если Вы не были активны в течение 30 дней, то Ваш профиль удаляется автоматически на наш сервер!
+    </p>
+
+  </div>
+   </div>
+     <div class="w-[360px] flex flex-col gap-5 absolute right-[290px] top-[430px]">
+        
+        <div class="flex w-full h-[65px] ">
+            <a href="#" class="flex-1  flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#2488bd]">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="#" class="flex-1 flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#b32252]">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="flex-1 flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#111111]">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="flex-1 flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#8b2d69]">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+ <div class="bg-[#1e2633] rounded-[4px] p-[15px] box-border flex flex-col gap-[25px]">
+            
+            <div>
+                <h2 class="text-[16px] font-bold uppercase mt-0 mb-[15px] pl-[10px] flex items-center text-[#79a3cf] border-l-4 border-[#1a88bd]">
+                    Tasodifiy Filmlar
+                </h2>
+                <div class="bg-[#151a21] rounded-[4px] p-[10px] text-center">
+                    <div class="w-full h-[300px] overflow-hidden rounded-[2px] mb-[10px]">
+                        <img id="movieImg" src="https://images.uzmovi.net/2026-07-01/2d3862e183566dfe256c38322fc7fd08.jpg" alt="Kino" class="w-full h-full object-cover">
+                    </div>
+                    <p id="movieTitle" class="text-[#79a3cf] text-[13px] leading-[1.4] m-0 min-h-[36px] line-clamp-2">
+                        Maykl Michael uzbek o'zbek tilida premyera kino tarjima...
+                    </p>
+                </div>
+                <div class="flex justify-center gap-[6px] mt-[12px]">
+                    <div class="dot w-5 h-1 bg-[#2ba2da] cursor-pointer rounded-[2px] transition-colors duration-300" onclick="changeMovie(0)"></div>
+                    <div class="dot w-5 h-1 bg-[#3b4859] cursor-pointer rounded-[2px] transition-colors duration-300" onclick="changeMovie(1)"></div>
+                    <div class="dot w-5 h-1 bg-[#3b4859] cursor-pointer rounded-[2px] transition-colors duration-300" onclick="changeMovie(2)"></div>
+                </div>
+            </div><div>
+                <h2 class="text-[16px] font-bold uppercase mt-0 mb-[15px] pl-[10px] flex items-center text-[#79a3cf] border-l-4 border-[#a855f7]">
+                    Top Donatorlar
+                </h2>
+                <div class="flex flex-col gap-[10px] mb-[12px]">
+                    <div class="flex items-center bg-[#5c6643] rounded-[4px] p-[10px] text-white">
+                        <img class="w-10 h-10 rounded-full mr-3 object-cover" src="https://api.dicebear.com/7.x/bottts/svg?seed=sunnat" alt="avatar">
+                        <div class="flex flex-col gap-[2px]">
+                            <span class="text-[14px] font-bold">👑 Sunnat Azizov</span>
+                            <span class="text-[13px] text-white">310 000 so'm</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#252f3f] rounded-[4px] p-[10px] text-white">
+                        <img class="w-10 h-10 rounded-full mr-3 object-cover" src="https://api.dicebear.com/7.x/identicon/svg?seed=islom" alt="avatar">
+                        <div class="flex flex-col gap-[2px]">
+                            <span class="text-[14px] font-bold">Islomjon Joraboyev</span>
+                            <span class="text-[13px] text-[#94a3b8]">210 000 so'm</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#252f3f] rounded-[4px] p-[10px] text-white">
+                        <img class="w-10 h-10 rounded-full mr-3 object-cover" src="https://api.dicebear.com/7.x/initials/svg?seed=abdu" alt="avatar">
+                        <div class="flex flex-col gap-[2px]">
+                            <span class="text-[14px] font-bold">абдурашид_с_ SsS</span>
+                            <span class="text-[13px] text-[#94a3b8]">175 000 so'm</span>
+                        </div>
+                    </div>
+ </div>
+                <a href="#" class="w-full bg-[#5b7534] text-white border-none p-[10px] text-[13px] font-bold uppercase rounded-[4px] cursor-pointer flex justify-center items-center gap-[5px] no-underline transition-colors duration-200 hover:bg-[#69873c] box-border">
+                    Donat Qilish <i class="fas fa-chevron-right text-[10px]"></i>
+                </a>
+            </div><div class="rounded-[4px] overflow-hidden w-full">
+                <div class="bg-[#7c3aed] text-white p-[12px] text-[14px] font-bold uppercase flex justify-between items-center cursor-pointer" onclick="toggleAccordion('ratingContent', 'ratingIcon')">
+                    <span>Yuqori reytingda</span>
+                    <i id="ratingIcon" class="fas fa-minus-circle"></i>
+                </div>
+                
+                <div id="ratingContent" class="py-[12px] px-0 flex flex-col gap-[12px]">
+                    <div class="flex gap-[12px] border-b border-[#252f3f] pb-[12px]">
+                        <img class="w-[65px] h-[90px] object-cover rounded-[2px]" src="https://picsum.photos/100/150?random=11" alt="kino">
+                        <div class="flex flex-col justify-between flex-1">
+                            <a href="#" class="text-[#79a3cf] text-[13px] font-bold uppercase no-underline leading-[1.2] hover:text-[#2ba2da]">
+                                O'rgimchak-Odam: Uyga yo'l yo'q
+                            </a>
+                            <span class="bg-[#151a21] text-[#55657e] text-[11px] px-[6px] py-[2px] rounded-[3px] self-start">Tarjima kinolar</span>
+                            <div class="flex items-center gap-2">
+                                <button class="bg-[#151a21] border-none text-[#22c55e] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
+                                    <i class="far fa-thumbs-up"></i>
+                                </button>
+                                <span class="text-[#22c55e] font-bold text-xs">+35727</span>
+                                <button class="bg-[#151a21] border-none text-[#ef4444] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
+                                    <i class="far fa-thumbs-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+ <div class="flex gap-[12px] border-b-0 pb-0">
+                        <img class="w-[65px] h-[90px] object-cover rounded-[2px]" src="https://picsum.photos/100/150?random=12" alt="kino">
+                        <div class="flex flex-col justify-between flex-1">
+                            <a href="#" class="text-[#79a3cf] text-[13px] font-bold uppercase no-underline leading-[1.2] hover:text-[#2ba2da]">
+                                Venzdey Wednesday Adamslar
+                            </a>
+                            <span class="bg-[#151a21] text-[#55657e] text-[11px] px-[6px] py-[2px] rounded-[3px] self-start">Tarjima kinolar</span>
+                            <div class="flex items-center gap-2">
+                                <button class="bg-[#151a21] border-none text-[#22c55e] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
+                                    <i class="far fa-thumbs-up"></i>
+                                </button>
+                                <span class="text-[#22c55e] font-bold text-xs">+35681</span>
+                                <button class="bg-[#151a21] border-none text-[#ef4444] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
+                                    <i class="far fa-thumbs-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+<a href="#" class="text-center text-[#79a3cf] no-underline text-xs uppercase py-2 border-t border-[#252f3f] mt-[5px] block hover:text-white">
+                        Brachasini ko'rish
+                    </a>
+                </div><div class="bg-[#252f3f] border-t border-[#1e2633] text-[13px] mt-[5px] text-white p-[12px] font-bold uppercase flex justify-between items-center cursor-pointer">
+                    <span>Ko'p muhokama qilingan</span>
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="bg-[#252f3f] border-t border-[#1e2633] text-[13px] mt-[5px] text-white p-[12px] font-bold uppercase flex justify-between items-center cursor-pointer">
+                    <span>Ko'p ko'rilgan</span>
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+            </div>
+        </div>
+ <div class="mt-2 bg-[#1e2633] p-4 rounded-[4px]">
+            <h3 class="text-white text-sm font-bold uppercase mb-3 tracking-wide">
+                <i class="fas fa-tags mr-1 text-[#2ba2da]"></i> Teglar buluti
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">visokeo</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">ozbek</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">kino</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">qismlari</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">To'yi</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">Andressen</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">Sichqon</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">Yo'lbarslar</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">SAindhav</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">andreas</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">uzbek</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">shamollar</a>
+                <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200" href="#">premyera</a>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+<script>
+const slides = [
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=1200",
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
+];
+
+let current = 0;
+const img = document.getElementById("slide");
+
+document.getElementById("next").onclick = () => {
+    current = (current + 1) % slides.length;
+    img.src = slides[current];
+};
+
+document.getElementById("prev").onclick = () => {
+    current = (current - 1 + slides.length) % slides.length;
+    img.src = slides[current];
+};
+</script>
+ <footer>
+    <div class="footer-orabturuvchi mt-[250px]">
+
+      <div class="tepa bg-[#222933] w-[100%] min-h-[100px] py-6 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 gap-6">
+        <div class="rasm flex justify-center">
+          <img src="https://uzmovi.net/images/logo.gif" alt="Logo" class="max-w-[277px] w-full h-auto">
+        </div>
+        
+      
+        <div class="reklama flex flex-wrap mt-[100px] justify-center gap-2 mt-[100px] px-2 md:px-11">
+          <ul class="flex flex-wrap justify-center gap-2">
+            <li>
+              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Reklama</a>
+            </li>
+            <li>
+              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">DMCA</a>
+            </li>
+            <li>
+              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Sayt qoidalari</a>
+            </li>
+            <li>
+              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Qayta aloqa</a>
+            </li>
+            <li>
+              <a class="block p-[6px_10px] bg-[#222933] border border-[#313842] text-[#a5bbdc] rounded-[3px] text-sm md:text-base whitespace-nowrap" href="">Yosh toifasi</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="16+">
+          <ul class="flex items-center justify-center gap-3">
+            <li class="h-[31px]">
+              <img src="https://uzmovi.net/images/16_plus.png" alt="" class="h-full object-contain">
+            </li>
+            <li class="h-[31px]">
+              <img src="https://uzmovi.net/images/hit.gif" alt="" class="h-full object-contain">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="past bg-[#131a20] py-[20px] px-4 text-center text-xs md:text-sm leading-relaxed">
+        <div class="max-w-4xl mx-auto space-y-1">
+          <p class="text-[#6E879F]">© <strong> UZMOVi.com</strong> — 2019 - 2026</p>
+          <p class="text-[#6E879F]">Права на фильмы принадлежат их авторам. Все фильмы представлены только для ознакомления.</p>
+          <p class="text-[#6E879F]">Администрация не несет ответственности за размещенные пользователями нелегальные материалы! Любой фильм <a href="https://uzmovi.net/rightholder_eng.html" class="underline hover:text-[#a5bbdc]">будет удален</a> по требованию правообладателя</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
