@@ -31,3 +31,6 @@ def qoida(request):
 
 def royhat(request):
     return render(request,"royhat.html")
+
+def videoichi(request):
+    return render(request,"videoichi.html")
