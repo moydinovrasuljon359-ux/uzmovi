@@ -1,6 +1,5 @@
 from django.urls import path
 from .views import * 
-
 urlpatterns = [
     path('navigation/', navigation, name='navigation'),
     path('footer/', footer, name='footer'),
@@ -13,5 +12,6 @@ urlpatterns = [
     path('qoida/', qoida, name='qoida'),
     path('royhat/', royhat, name='royhat'),
     path('videoichi/', videoichi, name='videoichi'),
+    path("", splash, name='splash'),
    path("category/<str:category_name>/", category, name="category"),
 ]

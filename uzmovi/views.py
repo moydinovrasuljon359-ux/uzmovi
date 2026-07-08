@@ -34,3 +34,6 @@ def royhat(request):
 
 def videoichi(request):
     return render(request,"videoichi.html")
+
+def splash(request):
+    return render(request,"splash.html")

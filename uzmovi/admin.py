@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Category,Narsalar
+from .models import Category
 
 admin.site.register(Category)
-admin.site.register(Narsalar)
+
 # Register your models here.
