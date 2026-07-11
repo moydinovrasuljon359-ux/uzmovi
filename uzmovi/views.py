@@ -1,5 +1,8 @@
+from urllib import request
 from django.shortcuts import render
 from django.shortcuts import render
+
+from uzmovi.models import Category
 # Create your views here.
 
 def navigation(request):
@@ -11,8 +14,14 @@ def footer(request):
 def index(request):
     return render(request,"index.html")
 
-def category(request, category_name):
-    return render(request, 'category.html')
+def category(request):
+    categories = Category.objects.all() 
+    context = {'categories': categories}
+    return render(request, 'category.html', context)
+def detali(request, id):
+        category = Category.objects.get(id=id)
+        context = {'category': category}
+        return render(request, 'detali.html', context)
 
 def serial(request):
     return render(request,"serial.html")
@@ -37,3 +46,5 @@ def videoichi(request):
 
 def splash(request):
     return render(request,"splash.html")
+
+

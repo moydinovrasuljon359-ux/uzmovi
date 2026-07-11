@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
 
+<body class="p-6">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            
+            {% for category in categories %}
+            <div class="bg-[#222933] rounded overflow-hidden shadow-lg flex flex-col justify-between">
+                
+                {% if category.img %}
+                    <img src="{{ category.img.url }}" class="w-full h-[274px] object-cover" alt="{{ category.name }}">
+                {% else %}
+                    <img src="https://images.uzmovi.net/2026-06-17/b86d36003c861f7c099f2c3b4084afbe.jpg" class="w-full h-[274px] object-cover" alt="No image">
+                {% endif %}
+                
+                <h1 class="text-center text-[#9CB1D0] py-4 px-2 text-sm font-medium">
+                    {{ category.name }}
+                </h1>
+            </div>
+       
+               
+            {% endfor %}
+        </div>
+    </div>
 
+   
 
 </body>
 </html>

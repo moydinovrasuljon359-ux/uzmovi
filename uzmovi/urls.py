@@ -1,3 +1,4 @@
+from django import views
 from django.urls import path
 from .views import * 
 urlpatterns = [
@@ -13,5 +14,7 @@ urlpatterns = [
     path('royhat/', royhat, name='royhat'),
     path('videoichi/', videoichi, name='videoichi'),
     path("", splash, name='splash'),
-   path("category/<str:category_name>/", category, name="category"),
+   path('category/', category, name='category'),
+   path('detali/<int:id>/', detali, name='detali'),
+
 ]
