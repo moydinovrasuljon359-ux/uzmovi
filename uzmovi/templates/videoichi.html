@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <body class="bg-[#131A20]">
+
+<body class="bg-[#0F172A]">
     <div class="w-full h-[108px] bg-[#222933] relative">
         <img src="https://uzmovi.net/images/logo.gif" class="absolute left-[100px]  top-[20px] w-[170px] " alt="">
         <div
@@ -33,22 +34,27 @@
                         class="bg-[#313e4f] text-[#92a1b1] px-6 py-3 rounded text-sm font-sans transition-colors duration-300 hover:bg-[#3d4d62] hover:text-white">
                         Tarjima kinolar
                     </button>
+
                     <button
                         class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded duration-300 hover:bg-[#3d4d62] hover:text-white">
                         Premyeralar
                     </button>
+
                     <button
                         class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
                         Hind kinolari
                     </button>
+
                     <button
                         class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
                         Multfilm
                     </button>
+
                     <button
                         class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
                         Kino yangiliklar
                     </button>
+
                     <button
                         class="bg-[#313e4f] text-[#92a1b1] px-[6px] py-[3px] rounded  duration-300 hover:bg-[#3d4d62] hover:text-white">
                         Kino yangiliklar
@@ -271,6 +277,7 @@
         body {
 
             height: 100%;
+
         }
 
         body {
@@ -367,7 +374,7 @@
 
     </head>
 
-  <header class=" akam w-full bg-[#131A20]  mt-[-20px] md:mt-[100px] py-6">
+    <header class=" akam w-full bg-[#131A20]  mt-[-20px] md:mt-[100px] py-6">
 
         <div class="max-w-[1170px] w-full mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
 
@@ -399,7 +406,7 @@
                 <div
                     class="w-[40px] h-[39px] border-2 border-[#313842] rounded flex items-center justify-center hover:bg-[#304156] cursor-pointer transition">
                     <a href="http://127.0.0.1:8000/primyera/#">
-                        <i   class="fa-solid fa-film"></i>
+                        <i class="fa-solid fa-film"></i>
                     </a>
                 </div>
                 <div
@@ -427,7 +434,6 @@
             </button>
         </div>
     </header>
-
 
     <section id="login-modal" style="display: none;"
         class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
@@ -458,6 +464,7 @@
     <script>
         const btn = document.getElementById("btn");
         const tooltip = document.getElementById("tooltip");
+        const tooltipp = document.getElementById("tooltipp");
         const loginBtn = document.getElementById("login-btn");
         const loginModal = document.getElementById("login-modal");
         const closeModal = document.getElementById("close-modal");
@@ -478,15 +485,6 @@
             }
         });
     </script>
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
 
@@ -551,7 +549,7 @@
         }
     </style>
 
-    <div class="somsa mt-[-700px] overflow-x-auto ">
+    <div class="somsa mt-[-700px] ">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
 
@@ -702,8 +700,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="circle-avatar">
-                        <img onclick="ochinnyuuuuyyyyyuuuu()" src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg"
-                            alt="Kino">
+                        <img onclick="ochinnyuuuuyyyyyuuuu()"
+                            src="https://story.uzmovi.net/2026-02-09/80x80_prev_6989cd52c3db83.70353608.jpg" alt="Kino">
                     </div>
                 </div>
             </div>
@@ -730,7 +728,7 @@
     </a>
 
 
- <div>
+    <div>
         <div id="modal" class="hidden fixed inset-0 flex justify-center z-50">
 
             <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
@@ -738,7 +736,7 @@
                     <button onclick="yop()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                   <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qiling</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">hiyonat oyinlari</h1>
                 </div>
@@ -746,7 +744,7 @@
 
         </div>
 
-        
+
 
         <div id="modal2" class="hidden fixed inset-0 flex justify-center z-50">
 
@@ -755,14 +753,14 @@
                     <button onclick="yopi()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">regin 2</h1>
                 </div>
             </div>
 
         </div>
-    
+
 
         <div id="modal3" class="hidden fixed inset-0 flex justify-center z-50">
 
@@ -771,7 +769,7 @@
                     <button onclick="yopin()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">qorquv</h1>
                 </div>
@@ -787,7 +785,7 @@
                     <button onclick="yopinn()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">momiyo</h1>
                 </div>
@@ -802,7 +800,7 @@
                     <button onclick="yopinny()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
                 </div>
@@ -817,7 +815,7 @@
                     <button onclick="yopinnyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">motor qanbat</h1>
                 </div>
@@ -847,7 +845,7 @@
                     <button onclick="yopinnyu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">sumerking</h1>
                 </div>
@@ -861,7 +859,7 @@
                     <button onclick="yopinnyuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">tanishing jo blek</h1>
                 </div>
@@ -875,7 +873,7 @@
                     <button onclick="yopinnyuuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                  <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">liva sergevish</h1>
                 </div>
@@ -903,7 +901,7 @@
                     <button onclick="yopinnyuuuuy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
                 </div>
@@ -917,7 +915,7 @@
                     <button onclick="yopinnyuuuuyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                   <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
                 </div>
@@ -931,7 +929,7 @@
                     <button onclick="yopinnyuuuuyyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
                 </div>
@@ -945,7 +943,7 @@
                     <button onclick="yopinnyuuuuyyyyy()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                   <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
                 </div>
@@ -959,7 +957,7 @@
                     <button onclick="yopinnyuuuuyyyyyu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
                 </div>
@@ -973,7 +971,7 @@
                     <button onclick="yopinnyuuuuyyyyyuu()" class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                     <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
                 </div>
@@ -995,7 +993,7 @@
             </div>
 
         </div>
-            <div id="modal20" class="hidden fixed inset-0 flex justify-center z-50">
+        <div id="modal20" class="hidden fixed inset-0 flex justify-center z-50">
 
             <div class="w-[100%] h-[100%] bg-[#1A1A1B] m-[auto] flex items-center justify-center">
                 <div class="w-[432px] h-[100%] bg-black relative pt-[300px]">
@@ -1003,7 +1001,7 @@
                         class="absolute top-2 right-3 text-3xl font-bold text-white">
                         ×
                     </button>
-                      <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
+                    <img src="/static/img/0eb6039a-1a0d-4f9e-845a-015267e10242.png" alt="">
                     <button class="w-[432px] h-[48px] bg-red-600 mt-[300px]">tomosha qilin</button>
                     <h1 class="text-white mt-[-90px] text-[19px]">lanatlanga rohiba</h1>
                 </div>
@@ -1154,292 +1152,356 @@
                 document.getElementById("modal20").classList.add("hidden");
             }
         </script>
-        
-<div class="max-w-[1300px] w-full mx-auto px-[16px] py-[24px] flex flex-col lg:flex-row gap-[24px] mt-[-300px]">
 
-    <main class="flex-1 bg-[#253241] p-[24px] rounded-[8px] h-fit">
-        
-        <div class="border-l-[5px] border-cyan-500 flex items-center justify-between gap-[12px] px-[16px] py-[16px] rounded-[4px] bg-[#2b3948]">
-            <h1 class="text-white text-[16px] sm:text-[18px] md:text-[24px] font-bold uppercase leading-[28px]">
-                QO'LIMDAN USHLA (2026, PREMYERA, O'ZBEK TILIDA, UZBEK)
-            </h1>
-            <button class="min-w-[40px] w-[40px] h-[40px] bg-cyan-600 hover:bg-cyan-500 flex items-center justify-center rounded-[4px] transition-colors flex-shrink-0">
-                <i class="fa-regular fa-bookmark text-white"></i>
-            </button>
-        </div>
+    </div>
+    <div class="flex bg-[#0f172a] w-[100%] h-[100vh] justify-center items-center">
 
-        <div class="flex flex-col sm:flex-row gap-[24px] mt-[24px]">
-            <div class="w-full sm:w-[35%] flex-shrink-0">
-                <img src="https://images.uzmovi.net/2026-06-17/b86d36003c861f7c099f2c3b4084afbe.jpg" alt="Poster" class="w-full rounded-[6px] border border-slate-600 object-cover">
-            </div>
+        <div class="bg-[#0f172a] p-6 min-h-screen text-slate-300 font-sans  justify-center items-start">
 
-            <div class="w-full sm:w-[65%] space-y-[12px]">
-                
-                <div class="flex flex-col sm:flex-row">
-                    <div class="bg-[#3b4d67] sm:w-[180px] text-center text-white py-[12px] font-semibold text-[14px] tracking-wider">NOMI</div>
-                    <div class="bg-[#202833] flex-1 text-white px-[16px] py-[12px] text-[14px]">Qo'limdan ushla (2026, Premyera)</div>
-                </div>
 
-                <div class="flex flex-col sm:flex-row">
-                    <div class="bg-[#3b4d67] sm:w-[180px] text-center text-white py-[12px] font-semibold text-[14px] tracking-wider">JANR</div>
-                    <div class="bg-[#202833] flex-1 text-white px-[16px] py-[12px] text-[14px]">Komediya / Drama</div>
-                </div>
+            <div class="w-full max-w-5xl bg-[#131e31] border border-slate-800 rounded shadow-xl overflow-hidden">
 
-                <div class="flex flex-col sm:flex-row">
-                    <div class="bg-[#3b4d67] sm:w-[180px] text-center text-white py-[12px] font-semibold text-[14px] tracking-wider">DAVLATI</div>
-                    <div class="bg-[#202833] flex-1 text-white px-[16px] py-[12px] text-[14px]">Qozog'iston</div>
-                </div>
 
-                <div class="flex flex-col sm:flex-row">
-                    <div class="bg-[#3b4d67] sm:w-[180px] text-center text-white py-[12px] font-semibold text-[14px] tracking-wider">YILI</div>
-                    <div class="bg-[#202833] flex-1 text-white px-[16px] py-[12px] text-[14px]">2025</div>
-                </div>
+                <div class="flex justify-between items-center bg-[#111a2e] border-b border-slate-800 p-4">
+                    <div class="flex items-center gap-3">
 
-                <div class="flex flex-col sm:flex-row">
-                    <div class="bg-[#3b4d67] sm:w-[180px] text-center text-white py-[12px] font-semibold text-[14px] tracking-wider">TILI</div>
-                    <div class="bg-[#202833] flex-1 text-white px-[16px] py-[12px] text-[14px]">O'zbekcha</div>
-                </div>
+                        <span class="w-1.5 h-7 bg-[#00a3ff] block rounded-sm"></span>
+                        <h1 class="text-xl font-bold text-slate-200 tracking-wide uppercase">
+                            OBSESSIYA TALVASA UZBEK O'ZBEK TILIDA PREMYERA
+                        </h1>
+                    </div>
 
-                <div class="flex flex-col sm:flex-row">
-                    <div class="bg-[#3b4d67] sm:w-[180px] text-center text-white py-[12px] font-semibold text-[14px] tracking-wider">DAVOMIYLIGI</div>
-                    <div class="bg-[#202833] flex-1 text-white px-[16px] py-[12px] text-[14px]">1 soat 25 daqiqa</div>
-                </div>
-
-                <div class="flex justify-center pt-[16px]">
-                    <button class="bg-green-600 hover:bg-green-700 px-[24px] py-[8px] rounded-[6px] text-white font-bold transition-colors shadow-md">
-                        +6
+                    <button class="bg-[#00a3ff] text-white p-2.5 rounded hover:bg-[#0082cc] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+                            </path>
+                        </svg>
                     </button>
                 </div>
-            </div>
-        </div>
-    </main>
 
-    <aside class="w-full lg:w-[360px] flex-shrink-0 flex flex-col gap-[20px]">
 
-            <div class="w-[360px] flex flex-col gap-5">
+                <div class="p-6 bg-[#162238] flex flex-col md:flex-row gap-8">
 
-            <div class="flex w-full h-[65px]">
-                <a href="#"
-                    class="flex-1 flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#2488bd]">
-                    <i class="fab fa-telegram-plane"></i>
-                </a>
-                <a href="https://www.youtube.com/@uzmovicomofficial"
-                    class="flex-1 flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#b32252]">
-                    <i  class="fab fa-youtube"></i>
-                </a>
-                <a href="#"
-                    class="flex-1 flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#111111]">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                <a href="#"
-                    class="flex-1 flex justify-center items-center text-white text-2xl no-underline transition-opacity duration-200 hover:opacity-80 bg-[#8b2d69]">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <div class="bg-[#1e2633] rounded-[4px] p-[15px] box-border flex flex-col gap-[25px]">
 
-                <div>
-                    <h2
-                        class="text-[16px] font-bold uppercase mt-0 mb-[15px] pl-[10px] flex items-center text-[#79a3cf] border-l-4 border-[#1a88bd]">
-                        Tasodifiy Filmlar
-                    </h2>
-                    <div class="bg-[#151a21] rounded-[4px] p-[10px] text-center">
-                        <div class="w-full h-[300px] overflow-hidden rounded-[2px] mb-[10px]">
-                            <img id="movieImg" src="https://picsum.photos/300/400?random=1" alt="Kino"
-                                class="w-full h-full object-cover">
+                    <div
+                        class="w-full md:w-[320px] shrink-0 border-4 border-[#1c2d4a] rounded shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&amp;w=500"
+                            alt="Poster" class="w-full h-auto object-cover block">
+
+                    </div>
+
+
+                    <div class="flex-1 flex flex-col justify-between">
+                        {% for kino in kinolar %}
+                        <div
+                            class="space-y-2.5 relative before:absolute before:left-2 before:top-4 before:bottom-4 before:w-[2px] before:bg-slate-800">
+
+
+                            <div class="flex items-center gap-4 relative">
+                                <span
+                                    class="w-4 h-4 rounded-full bg-slate-800 border-4 border-[#162238] z-10 -ml-1"></span>
+                                <div
+                                    class="w-32 bg-[#1b2a44] py-2 px-4 text-xs font-bold text-slate-400  text-center rounded">
+                                    NOMI</div>
+                                <div
+                                    class="flex bg-[#1a273e] py-2 px-4 w-[440px] text-sm font-semibold text-slate-400 rounded">
+                                    {{ kino.nomi }}</div>
+                            </div>
+
+
+                            <div class="flex items-center gap-4 relative">
+                                <span
+                                    class="w-4 h-4 rounded-full bg-slate-800 border-4 border-[#162238] z-10 -ml-1"></span>
+                                <div
+                                    class="w-32 bg-[#1b2a44] py-2 px-4 text-xs font-bold text-slate-400  text-center rounded">
+                                    JANR</div>
+                                <div
+                                    class="flex bg-[#1a273e] w-[440px] py-2 px-4 text-sm font-semibold text-slate-400 rounded">
+                                    <span class="text-sky-400">{{ kino.janr }}</span>
+                                </div>
+                            </div>
+
+
+                            <div class="flex items-center gap-4 relative">
+                                <span
+                                    class="w-4 h-4 rounded-full bg-slate-800 border-4 border-[#162238] z-10 -ml-1"></span>
+                                <div
+                                    class="w-32 bg-[#1b2a44] py-2 px-4 text-xs font-bold text-slate-400  text-center rounded">
+                                    DAVLATI</div>
+                                <div
+                                    class="flex bg-[#1a273e] w-[440px] py-2 px-4 text-sm font-bold text-slate-300 rounded">
+                                    {{ kino.davlat }}</div>
+                            </div>
+
+
+                            <div class="flex items-center gap-4 relative">
+                                <span
+                                    class="w-4 h-4 rounded-full bg-slate-800 border-4 border-[#162238] z-10 -ml-1"></span>
+                                <div
+                                    class="w-32 bg-[#1b2a44] py-2 px-4 text-xs font-bold text-slate-400  text-center rounded">
+                                    YILI</div>
+                                <div
+                                    class="flex bg-[#1a273e] w-[440px] py-2 px-4 text-sm font-bold text-slate-300 rounded">
+                                    {{ kino.yil }}</div>
+                            </div>
+
+
+                            <div class="flex items-center gap-4 relative">
+                                <span
+                                    class="w-4 h-4 rounded-full bg-slate-800 border-4 border-[#162238] z-10 -ml-1"></span>
+                                <div
+                                    class="w-32 bg-[#1b2a44] py-2 px-4 text-xs font-bold text-slate-400  text-center rounded">
+                                    TILI</div>
+                                <div
+                                    class="flex bg-[#1a273e] w-[440px] py-2 px-4 text-sm font-semibold text-slate-400 rounded">
+                                    {{ kino.tili }}</div>
+                            </div>
+
+
+                            <div class="flex items-center gap-4 relative">
+                                <span
+                                    class="w-4 h-4 rounded-full bg-slate-800 border-4 border-[#162238] z-10 -ml-1"></span>
+                                <div
+                                    class="w-32 bg-[#1b2a44] py-2 px-4 text-xs font-bold text-slate-400  text-center rounded">
+                                    DAVOMIYLIGI</div>
+                                <div
+                                    class="flex-1 bg-[#1a273e] w-[440px] py-2 px-4 text-sm font-semibold text-slate-400 rounded">
+                                    {{ kino.davomiyligi }} minut</div>
+                            </div>
+
+
+                            <div class="flex items-center gap-4 relative">
+                                <span
+                                    class="w-4 h-4 rounded-full bg-slate-800 border-4 border-[#162238] z-10 -ml-1"></span>
+                                <div
+                                    class="w-32 bg-[#1b2a44] py-2 px-4 text-xs font-bold text-slate-400  text-center rounded">
+                                    YOSH CHEGARASI </div>
+                                <div class="flex-1 bg-[#1a273e] w-[420px] py-2 px-4 text-sm flex items-center rounded">
+                                    <span class="bg-[#0082cc] text-white font-bold px-2 py-1 rounded-full text-xs">{{
+                                        kino.yosh }}+</span>
+                                </div>
+                            </div>
+
                         </div>
-                        <p id="movieTitle"
-                            class="text-[#79a3cf] text-[13px] leading-[1.4] m-0 min-h-[36px] line-clamp-2">
-                            Maykl Michael uzbek o'zbek tilida premyera kino tarjima...
+                        {% endfor %}
+
+                        <div class="flex justify-center items-center gap-2 mt-6 md:mt-0">
+
+                            <button
+                                class="bg-[#1b2a44] border w-[30px] h-[30px] pl-[5px] bg-[green] rounded transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-hand-thumbs-down" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.864 15.674c-.956.24-1.843-.484-1.908-1.42-.072-1.05-.23-2.015-.428-2.59-.125-.36-.479-1.012-1.04-1.638-.557-.624-1.282-1.179-2.131-1.41C2.685 8.432 2 7.85 2 7V3c0-.845.682-1.464 1.448-1.546 1.07-.113 1.564-.415 2.068-.723l.048-.029c.272-.166.578-.349.97-.484C6.931.08 7.395 0 8 0h3.5c.937 0 1.599.478 1.934 1.064.164.287.254.607.254.913 0 .152-.023.312-.077.464.201.262.38.577.488.9.11.33.172.762.004 1.15.069.13.12.268.159.403.077.27.113.567.113.856s-.036.586-.113.856c-.035.12-.08.244-.138.363.394.571.418 1.2.234 1.733-.206.592-.682 1.1-1.2 1.272-.847.283-1.803.276-2.516.211a10 10 0 0 1-.443-.05 9.36 9.36 0 0 1-.062 4.51c-.138.508-.55.848-1.012.964zM11.5 1H8c-.51 0-.863.068-1.14.163-.281.097-.506.229-.776.393l-.04.025c-.555.338-1.198.73-2.49.868-.333.035-.554.29-.554.55V7c0 .255.226.543.62.65 1.095.3 1.977.997 2.614 1.709.635.71 1.064 1.475 1.238 1.977.243.7.407 1.768.482 2.85.025.362.36.595.667.518l.262-.065c.16-.04.258-.144.288-.255a8.34 8.34 0 0 0-.145-4.726.5.5 0 0 1 .595-.643h.003l.014.004.058.013a9 9 0 0 0 1.036.157c.663.06 1.457.054 2.11-.163.175-.059.45-.301.57-.651.107-.308.087-.67-.266-1.021L12.793 7l.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581s-.027-.414-.075-.581c-.05-.174-.111-.273-.154-.315l-.353-.354.353-.354c.047-.047.109-.176.005-.488a2.2 2.2 0 0 0-.505-.804l-.353-.354.353-.354c.006-.005.041-.05.041-.17a.9.9 0 0 0-.121-.415C12.4 1.272 12.063 1 11.5 1">
+                                    </path>
+                                </svg>
+                            </button>
+
+
+                            <span class="font-bold bg-[#1b2a44] px-3 py-1.5 rounded text-sm ">+50</span>
+
+
+                            <button class="bg-[#1b2a44] border bg-[red]  p-2 rounded transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div
+                class="relative bg-[#24303D] max-w-4xl mx-auto my-8 overflow-hidden rounded-2xl h-[240px]  border border-white border-black p-8 md:p-10 ">
+
+
+                <div
+                    class="absolute -top-24 -left-24 w-48 h-48 bg-amber-500/10 rounded-full blur-[60px] pointer-events-none">
+                </div>
+
+                <div class="relative z-10 flex flex-col  items-start gap-6">
+
+
+                    <div class="flex-shrink-0 h-">
+                        <svg class="w-12 h-12 fill-current transform rotate-180" viewBox="0 0 24 24">
+                            <path
+                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z">
+                            </path>
+                        </svg>
+                    </div>
+
+
+                    <div class="flex-grow">
+                        <p class="text-gray-300 text-base md:text-lg font-medium  font-sans">
+                            Sirli <span
+                                class="text-amber-400 font-semibold cursor-pointer hover:text-amber-300 transition-colors duration-200">"One
+                                Wish Willow"</span>ni sindirib, sevgilisining qalbini zabt etganidan so'ng, umidsiz
+                            romantik o'zi so'ragan narsaga erishganini ko'radi, ammo tez orada ba'zi istaklar qorong'u
+                            va dahshatli narxga tushishini anglaydi.
                         </p>
                     </div>
-                    <div class="flex justify-center gap-[6px] mt-[12px]">
-                        <div class="dot w-5 h-1 bg-[#2ba2da] cursor-pointer rounded-[2px] transition-colors duration-300"
-                            onclick="changeMovie(0)"></div>
-                        <div class="dot w-5 h-1 bg-[#3b4859] cursor-pointer rounded-[2px] transition-colors duration-300"
-                            onclick="changeMovie(1)"></div>
-                        <div class="dot w-5 h-1 bg-[#3b4859] cursor-pointer rounded-[2px] transition-colors duration-300"
-                            onclick="changeMovie(2)"></div>
-                    </div>
-                </div>
-                <div>
-                    <h2
-                        class="text-[16px] font-bold uppercase mt-0 mb-[15px] pl-[10px] flex items-center text-[#79a3cf] border-l-4 border-[#a855f7]">
-                        Top Donatorlar
-                    </h2>
-                    <div class="flex flex-col gap-[10px] mb-[12px]">
-                        <div class="flex items-center bg-[#5c6643] rounded-[4px] p-[10px] text-white">
-                            <img class="w-10 h-10 rounded-full mr-3 object-cover"
-                                src="https://api.dicebear.com/7.x/bottts/svg?seed=sunnat" alt="avatar">
-                            <div class="flex flex-col gap-[2px]">
-                                <span class="text-[14px] font-bold">👑 Sunnat Azizov</span>
-                                <span class="text-[13px] text-white">310 000 so'm</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-[#252f3f] rounded-[4px] p-[10px] text-white">
-                            <img class="w-10 h-10 rounded-full mr-3 object-cover"
-                                src="https://api.dicebear.com/7.x/identicon/svg?seed=islom" alt="avatar">
-                            <div class="flex flex-col gap-[2px]">
-                                <span class="text-[14px] font-bold">Islomjon Joraboyev</span>
-                                <span class="text-[13px] text-[#94a3b8]">210 000 so'm</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-[#252f3f] rounded-[4px] p-[10px] text-white">
-                            <img class="w-10 h-10 rounded-full mr-3 object-cover"
-                                src="https://api.dicebear.com/7.x/initials/svg?seed=abdu" alt="avatar">
-                            <div class="flex flex-col gap-[2px]">
-                                <span class="text-[14px] font-bold">абдурашид_с_ SsS</span>
-                                <span class="text-[13px] text-[#94a3b8]">175 000 so'm</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#"
-                        class="w-full bg-[#5b7534] text-white border-none p-[10px] text-[13px] font-bold uppercase rounded-[4px] cursor-pointer flex justify-center items-center gap-[5px] no-underline transition-colors duration-200 hover:bg-[#69873c] box-border">
-                        Donat Qilish <i class="fas fa-chevron-right text-[10px]"></i>
-                    </a>
-                </div>
-                <div class="rounded-[4px] overflow-hidden w-full">
-                    <div class="bg-[#7c3aed] text-white p-[12px] text-[14px] font-bold uppercase flex justify-between items-center cursor-pointer"
-                        onclick="toggleAccordion('ratingContent', 'ratingIcon')">
-                        <span>Yuqori reytingda</span>
-                        <i id="ratingIcon" class="fas fa-minus-circle"></i>
+
+                    <div class="hidden md:block flex-shrink-0  align-bottom  select-none">
+                        <svg class="w-16 h-16 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z">
+                            </path>
+                        </svg>
                     </div>
 
-                    <div id="ratingContent" class="py-[12px] px-0 flex flex-col gap-[12px]">
-                        <div class="flex gap-[12px] border-b border-[#252f3f] pb-[12px]">
-                            <img class="w-[65px] h-[90px] object-cover rounded-[2px]"
-                                src="https://picsum.photos/100/150?random=11" alt="kino">
-                            <div class="flex flex-col justify-between flex-1">
-                                <a href="#"
-                                    class="text-[#79a3cf] text-[13px] font-bold uppercase no-underline leading-[1.2] hover:text-[#2ba2da]">
-                                    O'rgimchak-Odam: Uyga yo'l yo'q
-                                </a>
-                                <span
-                                    class="bg-[#151a21] text-[#55657e] text-[11px] px-[6px] py-[2px] rounded-[3px] self-start">Tarjima
-                                    kinolar</span>
-                                <div class="flex items-center gap-2">
-                                    <button
-                                        class="bg-[#151a21] border-none text-[#22c55e] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
-                                        <i class="far fa-thumbs-up"></i>
-                                    </button>
-                                    <span class="text-[#22c55e] font-bold text-xs">+35727</span>
-                                    <button
-                                        class="bg-[#151a21] border-none text-[#ef4444] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
-                                        <i class="far fa-thumbs-down"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex gap-[12px] border-b-0 pb-0">
-                            <img class="w-[65px] h-[90px] object-cover rounded-[2px]"
-                                src="https://picsum.photos/100/150?random=12" alt="kino">
-                            <div class="flex flex-col justify-between flex-1">
-                                <a href="#"
-                                    class="text-[#79a3cf] text-[13px] font-bold uppercase no-underline leading-[1.2] hover:text-[#2ba2da]">
-                                    Venzdey Wednesday Adamslar
-                                </a>
-                                <span
-                                    class="bg-[#151a21] text-[#55657e] text-[11px] px-[6px] py-[2px] rounded-[3px] self-start">Tarjima
-                                    kinolar</span>
-                                <div class="flex items-center gap-2">
-                                    <button
-                                        class="bg-[#151a21] border-none text-[#22c55e] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
-                                        <i class="far fa-thumbs-up"></i>
-                                    </button>
-                                    <span class="text-[#22c55e] font-bold text-xs">+35681</span>
-                                    <button
-                                        class="bg-[#151a21] border-none text-[#ef4444] px-2 py-1 rounded-[3px] cursor-pointer text-[11px] flex items-center gap-1">
-                                        <i class="far fa-thumbs-down"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#"
-                            class="text-center text-[#79a3cf] no-underline text-xs uppercase py-2 border-t border-[#252f3f] mt-[5px] block hover:text-white">
-                            Brachasini ko'rish
-                        </a>
-                    </div>
-                    <div
-                        class="bg-[#252f3f] border-t border-[#1e2633] text-[13px] mt-[5px] text-white p-[12px] font-bold uppercase flex justify-between items-center cursor-pointer">
-                        <span>Ko'p muhokama qilingan</span>
-                        <i class="fas fa-plus-circle"></i>
-                    </div>
-                    <div
-                        class="bg-[#252f3f] border-t border-[#1e2633] text-[13px] mt-[5px] text-white p-[12px] font-bold uppercase flex justify-between items-center cursor-pointer">
-                        <span>Ko'p ko'rilgan</span>
-                        <i class="fas fa-plus-circle"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-2 bg-[#1e2633] p-4 rounded-[4px]">
-                <h3 class="text-white text-sm font-bold uppercase mb-3 tracking-wide">
-                    <i class="fas fa-tags mr-1 text-[#2ba2da]"></i> Teglar buluti
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">visokeo</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">ozbek</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">kino</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">qismlari</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">To'yi</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">Andressen</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">Sichqon</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">Yo'lbarslar</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">SAindhav</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">andreas</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">uzbek</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">shamollar</a>
-                    <a class="bg-[#151a21] text-[#79a3cf] text-xs px-2.5 py-1.5 rounded-[4px] no-underline hover:bg-[#252f3f] hover:text-white transition-colors duration-200"
-                        href="#">premyera</a>
                 </div>
             </div>
 
         </div>
 
     </div>
-    <script>
-        const slides = [
-            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=1200",
-            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
-        ];
 
-        let current = 0;
-        const img = document.getElementById("slide");
 
-        document.getElementById("next").onclick = () => {
-            current = (current + 1) % slides.length;
-            img.src = slides[current];
-        };
 
-        document.getElementById("prev").onclick = () => {
-            current = (current - 1 + slides.length) % slides.length;
-            img.src = slides[current];
-        };
-    </script>
-    <div class="relative bg-[#263445]  border-[#3f5f82] p-8 w-[900px] h-[150px] mt-[-900px] ml-[310px]">
-    <span class="absolute left-[4px] top-[3px] text-5xl text-yellow-400">❝</span>
+    <div class="flex items-center justify-center">
+        <div class="content flex        pt-5 pb-5   w-[1022px] h-[356px] bg-[#24303d]">
+            <div class="   pb-5 pl-10">
+                <div class="rsm "><img class="w-[183px] h-[250px] border-[2px] border-[#222933]"
+                        src="https://images.uzmovi.net/2026-07-05/d8e4360adb45830a3671cb68bf47bdb7.jpg" alt=""></div>
+                <div
+                    class="text-[#a5bbdc] flex text-center flex items-center justify-center h-64  text-[13px] w-[183px] h-[66px] bg-[#222933] #a5bbdc">
+                    obsessiya talvasa uzbek <br> ozbek tilida premyera</div>
+            </div>
+            <div class="w-[10px]"> </div>
+            <div class=" ">
+                <div class="rsm "><img class="w-[183px] h-[250px] border-[2px] border-[#222933]"
+                        src="https://images.uzmovi.net/2026-07-05/a1b02384ca7214c3a47db240695d43d8.jpg" alt=""></div>
+                <div
+                    class="text-[#a5bbdc] flex text-center flex items-center justify-center h-64  text-[13px] w-[183px] h-[66px] bg-[#222933] #a5bbdc">
+                    Kichkina shahzoda</div>
+            </div>
+            <div class="w-[10px]"> </div>
+            <div class=" ">
+                <div class="rsm "><img class="w-[183px] h-[250px] border-[2px] border-[#222933]"
+                        src="https://images.uzmovi.net/2026-07-03/419bb7bd900722500605049d7ae28505.jpg" alt=""></div>
+                <div
+                    class="text-[#a5bbdc] flex text-center flex items-center justify-center h-64  text-[13px] w-[183px] h-[66px] bg-[#222933] #a5bbdc">
+                    Qo'limdam ushla (2026, premyera, o'zbek tilida, Uzbek)</div>
+            </div>
+            <div class="w-[10px]"> </div>
+            <div class=" ">
+                <div class="rsm "><img class="w-[183px] h-[250px] border-[2px] border-[#222933]"
+                        src="https://images.uzmovi.net/2026-07-03/a0caa02e17b3dc3ee16ee0665957cb52.jpg" alt=""></div>
+                <div
+                    class="text-[#a5bbdc] flex text-center flex items-center justify-center h-64  text-[13px] w-[183px] h-[66px] bg-[#222933] #a5bbdc">
+                    Pan Volodiyevskiy</div>
+            </div>
+            <div class="w-[10px]"> </div>
 
-    <p class="pl-8 pr-12 text-[#9fd0ff] leading-8">
-        Siri "One Wish Willow"ni sindirib, sevgilisining qalbini zabt etganidan
-        so'ng, umidsiz romantik o'zi so'ragan narsaga erishganini ko'radi,
-        ammo tez orada ba'zi istaklar qorong'u va dahshatli narxga tushishini anglaydi.
-    </p>
+        </div>
+    </div>
 
-    <span class="absolute right-4 -bottom-6 text-7xl text-yellow-400">
-        ❞
-    </span>
-</div>
+    <div class="max-w-5xl mx-auto mt-5 bg-[#1e2a38] text-[white] rounded-md p-6">
+
+
+        <div class="flex justify-between items-center mb-6">
+            <div class="text-lg">
+                <span class="font-semibold">Izohlar (15)</span>
+                <span class="text-slate-400"> | Qoidalar</span>
+            </div>
+
+            <button class="border border-slate-600 px-4 py-2 rounded text-slate-300 hover:bg-slate-700">
+                SARALASH ▼
+            </button>
+        </div>
+
+        <div class="text-center text-slate-400 text-sm mb-8">
+            Saytda izoh qoldirish uchun iltimos avval avtorizatsiyadan o'ting.
+            <br>
+            <a href="#" class="text-blue-400 hover:underline">
+                Kirish yoki Ro'yxatdan o'tish
+            </a>
+        </div>
+
+
+        <div class="flex gap-4 mb-8">
+
+            <div class="w-12 h-12 rounded-full border border-slate-400"></div>
+
+            <div class="flex-1">
+
+                <div class="flex items-center gap-2">
+                    <h3 class="font-semibold">USA Bekmuradov</h3>
+
+                    <span class="text-slate-400 text-sm">
+                        • 1 kun avval
+                    </span>
+                </div>
+
+                <p class="text-slate-300 mt-2 leading-7">
+                    Kino judayam prosta daxvat koriwga sto'yiviy, uyqudan kechib
+                    kordim afsuslanmadim ichizdagi ko'p
+                    chustvalarni o'ynatvorarkan.
+                </p>
+
+                <button class="text-slate-400 mt-3 hover:text-white">
+                    ♡ Yoqdi (0)
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="flex gap-4 mb-8">
+
+            <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center text-3xl">
+                m
+            </div>
+
+            <div class="flex-1">
+
+                <div class="flex items-center gap-2">
+                    <h3 class="font-semibold">myprofile The</h3>
+
+                    <span class="text-slate-400 text-sm">
+                        • 2 kun avval
+                    </span>
+                </div>
+
+                <p class="text-slate-300 mt-2">
+                    vapshe jinnicha ekan, maza qildim
+                </p>
+
+                <button class="text-slate-400 mt-3 hover:text-white">
+                    ♡ Yoqdi (2)
+            </div>
+            <p class="text-slate-300 mt-2"> Shaxobiddin Saidov, IPhoneyiz musur, Samsung oling, yaxshi bo'p ketadi.
+            </p> <button class="text-slate-400 mt-3 hover:text-white"> ♡ Yoqdi (1
+                ) </button>
+        </div>
+    </div>
+    <div class="flex gap-4"> <img src="https://i.pravatar.cc/150?img=12
+" class="w-12 h-12 rounded-full object-cover">
+        <div class="flex-1">
+            <div class="flex items-center gap-2">
+                <h3 class="font-semibold">July Kamron</h3> <span class="text-slate-400 text-sm"> • 2 kun avva
+                    l </span>
+            </div>
+            <p class="text-slate-300 mt-2"> 10/1
+                0 </p> <button class="text-slate-400 mt-3 hover:text-white"> ♡ Yoqdi (1
+                ) </button>
+        </div>
+    </div>
+    <div class="h-[21px]"></div> <button
+        class="w-[975px]  h-[34px] inline-block mb-0 text-center align-middle relative cursor-pointer text-[12px] bg-[#232f3d] text-[#99b1d4] border border-[#304156] pt-[8px] pr-[14px] pb-[7px] pl-[14px] leading-[1.42857143]">KOPROQ
+        YULASH</button></div>
 </body>
+
 </html>

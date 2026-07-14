@@ -1195,12 +1195,14 @@
 
     <div class="w-[1170px] mx-auto gap-[30px] lg:flex">
         <div>
+            
             <div class="max-w-[872px] mx-auto px-3">
-
+             
+               
                 <div class="flex items-center justify-between mt-8">
                     <div class="border-l-4 border-[#08465b]">
                         <h1 class="text-[#9CB1D0] font-bold text-[17px] uppercase pl-[10px]">
-                            Tarjimali Kinolar
+                           Tarjimali kinolar
                         </h1>
                     </div>
 
@@ -1210,40 +1212,20 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
-                <a href="http://127.0.0.1:8000/videoichi/">
-                        <div class="bg-[#222933] ">
-                        <img class="w-full h-[274px] object-cover"
-                            src="https://images.uzmovi.net/2026-06-17/b86d36003c861f7c099f2c3b4084afbe.jpg" alt="">
-                        <h1 class="text-center text-[#9CB1D0] py-3 text-sm">
-                            Millard dollor izidan / Haronm pullar 2026, premyera
-                        </h1>
-                    </div>
-                </a>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 ">
 
+                
+              {% for banner in bannerlar %}
                     <div class="bg-[#222933]">
                         <img class="w-full h-[274px] object-cover"
-                            src="https://images.uzmovi.net/2026-06-17/0cdd545e76b61e53e229bb074b0530a8.jpg" alt="">
+                            src="{{ banner.rasm.url }}" alt="">
                         <h1 class="text-center text-[#9CB1D0] py-3 text-sm">
-                            Men fransik skorina
+                            {{ banner.yozuv }}
                         </h1>
                     </div>
+                    {% endfor %}
+                  
 
-                    <div class="bg-[#222933]">
-                        <img class="w-full h-[274px] object-cover hidden lg:block"
-                            src="https://images.uzmovi.net/2026-06-17/7fa2bf1eb4166ad90ebc256dcb005967.jpg" alt="">
-                        <h1 class="text-center text-[#9CB1D0] py-3 text-sm hidden lg:block">
-                            Yakshanba
-                        </h1>
-                    </div>
-
-                    <div class="bg-[#222933]">
-                        <img class="w-full h-[274px] object-cover hidden lg:block"
-                            src="https://images.uzmovi.net/2026-06-14/6c9efedff779e701ffa35ba69a591887.jpg" alt="">
-                        <h1 class="text-center text-[#9CB1D0] py-3 text-sm hidden lg:block">
-                            O't ochiruvchilar (premyera, o'zbek tilida, Uzbek)
-                        </h1>
-                    </div>
 
                 </div>
 

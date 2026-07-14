@@ -1,7 +1,132 @@
-{% extends 'base.html' %}
+<!-- {% extends 'base.html' %}
 
 {% block content %}
 
-    <h1 class="text-[#9CB1D0]">{{ category.qoshimcha }}</h1>
+<h1 class="text-[#9CB1D0]">{{ category.qoshimcha }}</h1>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
 
-{% endblock %}
+    .box {
+        background: #fff;
+        padding: 32px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 340px;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #222;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 12px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 11px;
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #1d4ed8;
+    }
+
+    .error {
+        color: #dc2626;
+        font-size: 13px;
+        margin-top: 8px;
+        text-align: center;
+        display: none;
+    }
+
+    .hint {
+        font-size: 12px;
+        color: #888;
+        margin-top: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* result pages */
+    .page {
+        display: none;
+        text-align: center;
+    }
+
+    .page.active {
+        display: block;
+    }
+
+    .page h3 {
+        margin: 0 0 6px;
+        color: #1d4ed8;
+    }
+
+    .page p {
+        color: #555;
+        font-size: 14px;
+        margin: 4px 0;
+    }
+
+    .back-btn {
+        background: transparent;
+        color: #2563eb;
+        border: 1px solid #2563eb;
+        margin-top: 16px;
+    }
+
+    .back-btn:hover {
+        background: #eef2ff;
+        color: #1d4ed8;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <div id="searchPage" class="page active">
+            <h2>ID bo'yicha qidirish</h2>
+            <input type="text" id="idInput" placeholder="ID kodni kiriting (masalan: 001)">
+            <button onclick="goToId()">O'tish</button>
+            <div class="error" id="errorMsg">Bunday ID topilmadi.</div>
+            <div class="hint">Sinab ko'ring: 001, 002, 003</div>
+        </div>
+
+        <div id="resultPage" class="page">
+            <h3 id="resName"></h3>
+            <p id="resRole"></p>
+            <p id="resId"></p>
+            <p id="resNote"></p>
+            <button class="back-btn" onclick="goBack()">Orqaga qaytish</button>
+        </div>
+
+    </div>
+
+    {% endblock %} -->

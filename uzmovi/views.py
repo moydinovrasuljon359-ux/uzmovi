@@ -1,8 +1,5 @@
-from urllib import request
-from django.shortcuts import render
-from django.shortcuts import render
-
-from uzmovi.models import Category
+from django.shortcuts import get_object_or_404, render
+from .models import *
 # Create your views here.
 
 def navigation(request):
@@ -14,14 +11,8 @@ def footer(request):
 def index(request):
     return render(request,"index.html")
 
-def category(request):
-    categories = Category.objects.all() 
-    context = {'categories': categories}
-    return render(request, 'category.html', context)
-def detali(request, id):
-        category = Category.objects.get(id=id)
-        context = {'category': category}
-        return render(request, 'detali.html', context)
+def category(request, category_name):
+    return render(request, 'category.html')
 
 def serial(request):
     return render(request,"serial.html")
@@ -41,10 +32,27 @@ def qoida(request):
 def royhat(request):
     return render(request,"royhat.html")
 
-def videoichi(request):
-    return render(request,"videoichi.html")
 
+def videoichi(request):
+    return render(request, "videoichi.html")
 def splash(request):
     return render(request,"splash.html")
 
+def index(request):
+    bannerlar = Banner.objects.all()
+    return render(request, "index.html", {
+        "bannerlar": bannerlar,
+    })
+from django.shortcuts import render
+from .models import Kino
 
+def index(request):
+    kinolar = Kino.objects.select_related(
+        "janr",
+        "davlat",
+        "yil"
+    ).all()
+
+    return render(request, "videoichi.html", {
+        "kinolar": kinolar
+    })
